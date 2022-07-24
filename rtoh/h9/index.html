@@ -1,0 +1,368 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #9">
+   <META NAME="generator" CONTENT="BBEdit 5.1">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>Here Be Dragons</TITLE>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<MAP NAME="tower3">
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="104,126,18"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of tower'; return true"
+		ALT="Central Core">
+	<AREA NAME="Entrance" SHAPE="RECT" COORDS="95,0,113,22"
+		HREF="javascript:alert('Carved above the lintel are a series of numbers in an apparantly random placement.');"
+		onMouseOver="self.status='Randomly placed numbers'; return true"
+		ALT="Numbers">
+
+	<AREA NAME="desatysso" SHAPE="RECT" COORDS="172,71,205,100"
+		HREF="javascript:alert('A single table and chair have been righted. A message is scratched in the metal of the tabletop: Desatysso was here. A bottle of greenish liquid sits atop it.');"
+		onMouseOver="self.status='Desatysso was here'; return true"
+		ALT="Desatysso was here">
+	<AREA NAME="Bar" SHAPE="POLY" COORDS="159,31,167,37,167,144,158,144"
+		HREF="javascript:alert('An incredible collection of broken glass covers what had once been a well stocked bar. A magic goblet was found in a hidden compartment.');"
+		onMouseOver="self.status='Broken glass'; return true"
+		ALT="Bar">
+	<AREA NAME="Tavern" SHAPE="POLY" COORDS="149,27,185,50,207,82,216,117,216,137,207,171,149,171"
+		HREF="javascript:alert('Various broken tables and debris litter the floor of what had once been a drinking establishment.');"
+		onMouseOver="self.status='Debris-strewn tavern'; return true"
+		ALT="Tavern">
+	<AREA NAME="casino" SHAPE="RECT" COORDS="59,81,149,171"
+		HREF="javascript:alert('Numerous piles of broken wood, metal and other junk cover the floor of what had once been a fine casino.');"
+		onMouseOver="self.status='Debris-strewn casino'; return true"
+		ALT="Casino">
+
+	<AREA NAME="hallway" SHAPE="RECT" COORDS="41,81,59,171"
+		HREF="javascript:alert('A narrow hallway reveals doorways to five small cells. The first four are wooden, the last is metal.');"
+		onMouseOver="self.status='Narrow hallway'; return true"
+		ALT="Narrow hallway">
+	<AREA NAME="cell1" SHAPE="POLY" COORDS="11,81,41,81,41,99,4,99"
+		HREF="javascript:alert('This cell is empty.');"
+		onMouseOver="self.status='Empty cell'; return true"
+		ALT="Empty cell">
+	<AREA NAME="cell2" SHAPE="POLY" COORDS="4,99,41,99,41,117,1,117"
+		HREF="javascript:alert('A frost encrusted body lays atop the remnants of a wooden table. Several hundred small pieces of paper litter the floor. Shards of a mirror fallen from the ceiling litter everything.');"
+		onMouseOver="self.status='Dead card player'; return true"
+		ALT="Dead card player">
+	<AREA NAME="cell34" SHAPE="POLY" COORDS="0,117,41,117,41,153,3,153,0,137"
+		HREF="javascript:alert('This cell is empty.');"
+		onMouseOver="self.status='Empty cell'; return true"
+		ALT="Empty cell">
+	<AREA NAME="cell5" SHAPE="POLY" COORDS="3,153,41,153,41,171,10,171"
+		HREF="javascript:alert('The metal door to this cell is inscribed with Final Round Game.');"
+		onMouseOver="self.status='Final Round Game'; return true"
+		ALT="Final Round Game">
+
+	<AREA NAME="stairs" SHAPE="POLY" COORDS="149,189,196,189,175,212,149,227"
+		HREF="javascript:alert('A staircase in green and blue tile leads to the lower level of the tower.');"
+		onMouseOver="self.status='Stairway down'; return true"
+		ALT="Stairway down">
+	<AREA NAME="Columns" SHAPE="POLY" COORDS="59,189,149,189,149,227,107,236,59,223"
+		HREF="javascript:alert('Three columns of ice stretch floor to ceiling, a skeleton embedded into one. It animates and attacks when the room is entered.');"
+		onMouseOver="self.status='Frozen skeleton'; return true"
+		ALT="Frozen skeleton">
+
+	<AREA NAME="empty1" SHAPE="POLY" COORDS="11,81,31,50,59,30,95,20,95,81"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='Empty room'; return true"
+		ALT="Empty room">
+	<AREA NAME="empty2" SHAPE="POLY" COORDS="113,19,149,27,149,81,113,81"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='Empty room'; return true"
+		ALT="Empty room">
+	<AREA NAME="empty3" SHAPE="POLY" COORDS="10,171,95,171,95,189,59,189,59,223,31,204"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='Empty room'; return true"
+		ALT="Empty room">
+	<AREA NAME="empty4" SHAPE="POLY" COORDS="113,171,207,171,196,189,113,189"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='Empty room'; return true"
+		ALT="Empty room">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,218,238"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #3">
+</MAP>
+
+<H2>Chapter 9: Here Be Dragons</H2>
+<H4>&quot;There's obviously some magic salt lick down there.&quot;
+-- Rosvenir</H4>
+
+<IMG SRC="tower3.gif" ALT="Tower #3" BORDER=0 HEIGHT=237 WIDTH=217
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower3">
+<IMG SRC="../fonts/T.gif" ALT="P" BORDER=0 HEIGHT=72 WIDTH=76
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+he next tower had a random series of numbers carved above the lintel, of
+no apparent significance or order. Kurik cast <I>Detect Enemies,</I> finding two on
+the western side of the tower. The entry hallway held doors to either side
+which led only to empty rooms. The central chamber beyond (marked
+&quot;A&quot; on the map) was strewn with broken glass, piles of decayed
+wood and metal, and crumbled masonry. Mirrors had once lined the walls but
+were now smashed and scattered. Fifteen platinum pieces were littered
+amongst the rubble, as well as a strange disk of metal painted with symbols
+along its edge. Adorned with pictures of cherries, horizontal black bars,
+and the number "7", the players quickly figured out that it was part of a
+slot machine. The characters remained perplexed.
+<BR>&nbsp; The room to the east (marked &quot;B&quot; on the map) had once
+been a tavern. An incredible collection of broken glass was all that
+remained of the well stocked bar. Various tables and chairs lay overturned
+throughout the room, save one. A single table had been pulled up next to the
+chamber's only window, a mug and bottle of thick green liquid atop it.
+Carved into the very metal of the tabletop was the simple statement,
+&quot;Desatysso was here.&quot; The greenish goo was identified as an
+extremely potent liquor, semi-frozen in the extreme cold.
+<BR CLEAR=LEFT><A NAME="chalice">&nbsp;</A> Kurik ventured behind the bar,
+getting skewered in the foot by a shard of glass for his trouble. He found a
+single bottle of red wine intact amidst the wreckage, unspoiled despite its
+extreme age owing to the cold. Endira (who had the good sense to use a Ring of
+Flying) tapped along the length of the counter to discover a secret
+compartment. Inside was an exquisitely formed crystal goblet. It was magical,
+and would remove the ill effects from anything drunk from it: poison,
+alchohol, etc.
+<BR CLEAR=RIGHT><A NAME="wight">&nbsp;</A> In the room to the south of the
+casino (the room marked &quot;C&quot; on the map) three icy columns had formed
+from floor to ceiling. The center column encased a human skeleton standing
+upright. Haer had been dutifully checking each door for traps, and entered the
+room to check the door beyond. When he did the skeleton boomed, &quot;Come to
+feel my icy embrace?&quot; and began to free itself. This was surprising only
+because Kurik's <I>Detect Enemies</I> had not indicated this area. Kurik later
+realized that it was out of range from where he cast the spell. In the
+meantime Haer beat a quick retreat whilst the ice morphed and flowed about the
+skeleton to create a sort of body. Cold flames of black sprung from the
+thing's hands, and it advanced on the retreating halfling.
+
+<P><CENTER><A HREF="pov.html"><IMG SRC="blackfire.jpg" ALT="Black Fire"
+	BORDER=0 HEIGHT=525 WIDTH=700 VSPACE=2></A></CENTER>
+
+<PRE><P><U>Early draft of the RTOH Screenplay</U>
+544 INT -- INTERIOR OF MOILIAN TOWER -- LATE AFTERNOON
+  Haer Gronagin dashes directly toward camera, which dollies upwards as he
+  runs underneath shot. Focus on Computer Generated Undead facing camera, ivory
+  skeleton visible through skin of ice, malevolent gaze fixed on the fleeing
+  halfling. Its hands glow with a cold, black fire which casts eerie shadows
+  throughout the room.
+
+  Rosvenir hits it with a magic spell, more CGI. [[Try to get a good lightning
+  effect, like Zeus's thunderbolts in <I>Xena</I>]] The black flame on its hands
+  sputters out briefly, then relights.
+
+  Kurik Steadfast steps forward and says "BEGONE!" in powerful voice, echo from
+  walls of the room in full Dolby 5+1 glory. [[Try to get some CGI glowy effect
+  around his head so the audience will know he cast a spell.]] The Undead whirls
+  about and claws at the paladin, catching him on fire with the strange black
+  flame.
+
+  [[Limited budget won't afford ILM, try to find some sucker with Poser and some
+  3d apps to generate the shot in his spare time.]]
+</PRE>
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Kurik's <I>Repel Undead</I> was powerfully cast, yet the creature
+shrugged it off as a mere annoyance. The black flame spread across the
+paladin's skin and clothing, but did not consume what it burned nor give off
+heat. Kurik felt himself weakening <I>[Editor's note: he was losing
+points of Temporary Constitution.]</I>
+<BR>&nbsp; Mystical created a <I>Wall of Flame</I> between the monster and
+Kurik, but it jumped through without hesitation. The black flame on its
+hands again guttered out briefly before relighting. Zem waded into the fray,
+swinging his broadsword in wide, parrying arcs trying to force it away from
+Kurik. The thing clawed at Zem but fortunately did not spread the black
+flame to him. Feeling the worsening situation justified the experiment,
+Rosvenir activated the <A HREF="../h8/index.html#wand">Wand of Days</A>. The
+room was bathed in an intense light, and the Undead moldered instantly to
+dust.
+
+<P><A NAME="blackfire"><U>Kurik's report to the Church, delivered via Tithing
+Bag</U></A>
+<BR>&nbsp; The black flames continued to spread, and I felt the stength
+being drained from me. I noted the flame on its hands had winked out briefly
+when hit by Rosvenir's <I>Starbolt,</I> and again when it jumped through the
+<I>Wall of Fire.</I> Steeling myself with a quick recitation of the Litany I
+walked slowly through the flaming wall. The black fire was extinguished,
+replaced by a conflagration of the more mundane sort which my companions
+helped to extinguish. The black fire continued to burn on the floor where
+the creature's hands had fallen to dust. I regret there is no safe way for
+me to send a sample for further analysis, but I urge you to spread the
+information that the black flame can be defeated by magical fire.
+<BR>&nbsp; There were areas cleared of ice on the floor of the tavern of
+vaguely humanoid shape, like the one discovered
+<A HREF="../h8/index.html#ice">earlier</A>. Desiring understanding, I
+implored Pandeos to allow me the knowledge of how this poor creature had
+died and been turned Undead. The <I>Death's Tale</I> showed a simple farmer
+pushing a cart down a city street. Tall towers ringed the landscape, casting
+shadows from the bright sun above. I believe this was Moil before the
+cataclysm. Suddenly the sky blackened, and the townspeople on the street
+dropped to the ground. The poor wretch also succumbed, falling into a deep
+slumber at the touch of the magic of Orcus. He died of starvation, still
+asleep. Somehow his remains were moved here, and frozen into a column of
+ice. I look forward to the encounter with the evil being who did this, that
+I might avenge the wrong done these people.
+
+<P><A NAME="healing"><U>The Narrator</U></A>
+<BR>&nbsp; Kahlen healed Kurik and Zem as best she could, but noted her
+spells were becoming less effective the longer they stayed in Moil. The room
+to the east contained a staircase leading down to a lower level. The party
+decided to complete the exploration of the upper level before venturing
+down, and so made for the western side of the tower where a long hallway
+held five doors. Rosvenir cast <I>Merging</I> to see what was beyond. Each
+door led to a small chamber. In one such (marked &quot;D&quot; on the map)
+was a naked human body slumped over the broken remnants of a wooden table.
+About two hundred small pieces of paper were scattered across the floor,
+though they were too far away for the astrologer to see clearly. Scattered
+atop everything was a broken mirror which had fallen from the ceiling.
+Rosvenir felt some sort of spell effect radiating from the body, which he
+was able to resist. Continuing on, the next several rooms were empty. The
+final doorway (marked &quot;E&quot; on the map) was made of metal and
+inscribed with &quot;Final Round Game.&quot; Rosvenir decided to forgo
+merging with the wall of this cell.
+<A NAME="dream"><BR></A>
+&nbsp; The day had been a long one. Choosing a defensible room to one
+side, the exhausted party got some rest. Rosvenir cast <I>Dream IV</I> to
+know of the things mentioned in Acerak's poem from
+<A HREF="../h7/index.html#obelisk">the obelisk</A>
+<OL>
+	<LI>What tower is the Brine Dragon in?
+	<LI>What tower is the Riddle-box in?
+	<LI>What tower is the Darkweaver in?
+	<LI>What is the Darkweaver?
+</OL>
+
+<P><U>Rosvenir's Dream</U>
+<BR><I>&nbsp; Standing before the obelisk, watch it split into three pieces.
+The first morphs into the vague outline of a great wyrm, and gathers speed as
+it changes shape again to a cylindrical tower. Two bridges connect it to
+other towers, and an iron triangle is attached at two points at its peak.
+<BR>&nbsp; The second piece of the obelisk stretches thin and curves back
+upon itself, forming a mesh. It speeds off as it changes form into a
+another tower, with a single bridge connecting it. It is graced with
+rectangular designs and a single spike at its peak.
+<BR>&nbsp; The third piece of the obelisk never fully coalesces, instead
+existing as a shroud of darkness with the sound of many feet scuffling until
+it too changes to the shape of a tower. It has a single bridge very low on
+one side, and is topped by an inverted triangle.
+</I>
+
+<P><A NAME="dragon"><U>Day 26</U></A>
+<BR>&nbsp; This was an unusually detailed and helpful dream. Exhortations
+from the GMs shortly before to, &quot;Focus, people.&quot; might have had
+something to do with this. The party was able to identify each of the three
+towers from the vision, determining the location of the items listed in
+Acerak's instructions. Now motivated, the group proceeded to the tower where
+the vision indicated the Brine Dragon would be. The smell of salt was easily
+distinguished as they approached. There was no inscription above the lintel
+of this tower, and the path terminated in a small ledge. Forty feet below,
+lapping softly against the stone walls, a salt water pool filled the tower.
+A rusty iron ladder was bolted to the wall next to the ledge where the party
+stood. It extended down until disappearing in the briny depths below.
+<BR>&nbsp; Rosvenir knew a little something of brine dragons. <I>[Editor's
+note: this is an understatement. He rolled a natural 100, channeled Tiamat,
+and recited everything there is to know about Brine Dragons.]</I> They are
+rather large, sometimes reaching ninety feet in length. They can breathe in
+salt water but not in fresh water nor air. Their breath weapon is a cloud
+of acid, though their jaws are powerful and their teeth very sharp. They
+feed by absorbing salt through their skin, and for this reason tend to line
+their lairs with sheets of crystallized salt. Like other dragons, they hoard
+shiny objects and wealth. They do not have wings, but do have webbed feet
+allowing them to move quickly underwater.
+
+<P>
+<IMG SRC="tower5.gif" ALT="Tower of the Brine Dragon" BORDER=0
+	HEIGHT=217 WIDTH=217 ALIGN=RIGHT HSPACE=3 VSPACE=1>
+&nbsp; The initial plan to retrieve the key was to fly down the outside of
+the tower and puncture it somehow, allowing the salt water to drain out. The
+dragon, unable to breathe air, would suffocate and the key could be
+recovered with little risk. The success of the plan rested on proper
+placement of the hole to make sure the water drained. Someone would have to
+scout around the depths to ensure this. Rosvenir and Zem cast spells
+allowing freedom of movement and resistance against the bitter cold, and a
+spell to allow mental communication. They then climbed down the ladder and
+dove beneath the surface. Approximately sixty feet below they came to a huge
+outcropping of salt filling the tower from the bottom. A cave was visible
+leading back into darkness.
+<BR>&nbsp; The two adventurers entered the cave and followed it around to
+the left. They came to a room near the outer wall of the tower (marked
+&quot;A&quot; on the map). An extensive rune had been carved into a sheet of
+metal. It was free of rust and could be clearly read. Unfortunately it was a
+<I>Dispel Magic</I> rune of 100th level. Amazingly, Rosvenir's <I>Water
+Breathing</I> spell survived the effect, but Zem was not so fortunate and
+found himself unable to breathe or move while eighty feet beneath the
+surface. Rosvenir cast <I>Air Bubble</I> to envelop Zem, allowing him to
+breathe once again. The pair recast the spells they had lost.
+<BR>&nbsp; Continuing on, the tunnel came to an abrupt end in a small
+chamber (marked &quot;B&quot; on the map). Two skeletons were embedded in
+one wall of the chamber, covered with a thick layer of salt. One of them
+distinctly seemed to be pointing at the ceiling. Refusing to be distracted
+from their objective, the adventurers turned around to retrace their steps
+back to the first fork of the tunnel.
+<BR>&nbsp; This direction proved more fruitful. The dragon's lair opened
+before them (marked &quot;C&quot; on the map). Atop mounds of coins,
+sculptures, and other treasures slept a medium sized dragon. Its hide was
+mottled and irregular, with huge chunks of salt encrusted along its length.
+A soft glow emanated from atop a pillar of salt near the center of the lair.
+A silver key was secreted at the top of the pillar, and was the source of
+the illumination.
+
+<P><U>Zembahk Kaydian</U>
+<BR>&nbsp; The salt pillar containing the key appeared fragile to my eye.
+Were the tower punctured, I believe it would have broken under the force of
+the rushing water and the key would be lost. Instead, the elf and I
+determined to obtain it by stealth and magic. Rosvenir cast a spell of
+communication to speak with Kahlen, that she and the others might know of
+our intentions. I would swim back to the surface and wait by the ladder.
+Were anything to go wrong I would intercept the beast as it swam. Rosvenir
+would use two spells of teleportation, the first to move the key to his hand
+and the second to move himself to the location secured by his mental link
+with Kahlen. Upon his safe arrival I would climb the ladder.
+<BR>&nbsp; The plan was effective. Rosvenir appeared beside Kahlen, who
+called down to me. As I climbed, the water below began to churn as a huge
+form shook itself awake. The dragon roared its frustration as I climbed
+higher, but could do me no harm from below. I rejoined my companions, and we
+left the tower.
+<BR CLEAR=RIGHT>&nbsp; <BR>
+
+<CENTER><A HREF="pov.html"><IMG SRC="dragon.jpg" ALT="Dragon!" BORDER=0
+	HEIGHT=525 WIDTH=700 VSPACE=2></A></CENTER>
+
+<P><CENTER>
+Prev: <A HREF="../h8/index.html">The City That Waits</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h10/index.html">The Tangled Web We Weave</A>
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 9,000
+<LI>Mystical 8,750
+<LI>Endira 8,750
+<LI>Rosvenir 9,250
+<LI>Kurik 9,000
+<LI>Zem 8,750
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

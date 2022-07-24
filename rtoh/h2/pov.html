@@ -1,0 +1,56 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Raytraced Images for Chapter 2">
+   <META NAME="generator" CONTENT="BBEdit 4.5">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>Raytraced Images</TITLE>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<H2>Raytracing with POV-Ray</H2>
+
+Both images used in this chapter of the Chronicle were created using
+<A HREF="http://www.povray.org/">POV-Ray</A>, an amazing free raytracer.
+Both images are quick little things, each taking about an hour to
+construct and render.
+
+<P><IMG SRC="keep.jpg" ALT="Keep" BORDER=1 HEIGHT=240 WIDTH=320
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+
+<BR>&nbsp; The first image shows the fortress in the high mountain valley.
+The textures of the rocks and valley floor aren't quite right, but for
+purposes of illustration its probably good enough. The keep has considerably
+more detail than is apparent in the image; it may be used again in a future
+image.
+<BR>&nbsp; The mountain, valley floor, and ravine are generated a
+height_field. The keep is constructive solid geometry of cylinders and
+boxes. The <A HREF="keep.zip">image source</A> is available.
+<BR CLEAR=LEFT>&nbsp; 
+
+<P><IMG SRC="tunnel.jpg" ALT="Tunnel" BORDER=1 HEIGHT=240 WIDTH=320
+	ALIGN=LEFT HSPACE=4 VSPACE=1>
+
+<BR>&nbsp; The second image shows the rough hewn tunnel leading back into
+the mountain. The wall is constructed of boxes (a single plane with a brick
+texture looked too hokey). The tunnel is subtracted out of the wall as a
+superellipsoid. Numerous small spheres cut gouges out of the edges of the
+tunnel, to make it look more realistic. The <A HREF="tunnel.pov">image
+source</A> is available.
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

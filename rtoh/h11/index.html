@@ -1,0 +1,365 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #11">
+   <META NAME="generator" CONTENT="BBEdit 5.1">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>The Doctor Will See You Now</TITLE>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<MAP NAME="tower7u">
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="112,114,18"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of tower'; return true"
+		ALT="Central Core">
+	<AREA NAME="Staircase" SHAPE="POLY" COORDS="186,81,214,70,220,86,223,104,192,104,190,93,186,81"
+		HREF="javascript:alert('The staircase to the lower level.');"
+		onMouseOver="self.status='Staircase to lower level'; return true"
+		ALT="Staircase">
+
+	<AREA NAME="Enemy1" SHAPE="RECT" COORDS="62,184,72,194"
+		HREF="javascript:alert('An enemy, type unknown.');"
+		onMouseOver="self.status='An enemy'; return true"
+		ALT="Enemy">
+	<AREA NAME="Enemy2" SHAPE="RECT" COORDS="129,177,140,188"
+		HREF="javascript:alert('An enemy, type unknown.');"
+		onMouseOver="self.status='An enemy'; return true"
+		ALT="Enemy">
+	<AREA NAME="Cyndia" SHAPE="RECT" COORDS="40,40,46,46"
+		HREF="javascript:alert('A beautiful, platinum blonde woman sits amidst the wrecked furniture of the room. She is Cyndia, Medron Magen (a type of Healer golem).');"
+		onMouseOver="self.status='Cyndia, Medron Magen'; return true"
+		ALT="Cyndia, Medron Magen">
+
+	<AREA NAME="Empty" SHAPE="POLY" COORDS="54,90,71,65,102,52,102,83,91,89,81,103,54,90"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='Empty room'; return true"
+		ALT="Empty">
+	<AREA NAME="SmashedRoom" SHAPE="POLY" COORDS="23,46,41,27,61,51,47,66,23,46"
+		HREF="javascript:alert('A simple room, the furniture smashed into bits. A beautiful woman sits on the floor with her head bowed.');"
+		onMouseOver="self.status='Smashed room, with beautiful woman'; return true"
+		ALT="Smashed room">
+	<AREA NAME="Unexplored" SHAPE="CIRCLE" COORDS="112,114,110"
+		HREF="javascript:alert('The remainder of the tower was not explored.');"
+		onMouseOver="self.status='Unexplored region'; return true"
+		ALT="Unexplored">
+	<AREA NAME="Bridge" SHAPE="RECT" COORDS="223,104,237,122"
+		HREF="javascript:alert('The bridge to the Tower of the Brine Dragon.');"
+		onMouseOver="self.status='Bridge to Brine Dragon'; return true"
+		ALT="Bridge">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,238,226"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #7 Upper level">
+</MAP>
+
+<MAP NAME="tower7l">
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="111,112,18"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of tower'; return true"
+		ALT="Central Core">
+	<AREA NAME="Staircase" SHAPE="CIRCLE" COORDS="203,87,10"
+		HREF="javascript:alert('The staircase to the upper level.');"
+		onMouseOver="self.status='Staircase to upper level'; return true"
+		ALT="Staircase">
+
+	<AREA NAME="Enemy" SHAPE="RECT" COORDS="57,157,68,168"
+		HREF="javascript:alert('An enemy, type unknown.');"
+		onMouseOver="self.status='An enemy'; return true"
+		ALT="Enemy">
+	<AREA NAME="Doctor" SHAPE="RECT" COORDS="47,77,53,83"
+		HREF="javascript:alert('His lower torso replaced by a mechanical contrivance attached to the ceiling of the room, Doctor Tar normally cares for the severely injured. He has gone quite mad after so long without contact with others.');"
+		onMouseOver="self.status='Doctor Tar, mad doctor extraordinaire'; return true"
+		ALT="Doctor Tar">
+
+	<AREA NAME="Operating" SHAPE="POLY" COORDS="32,94,40,72,52,55,78,82,67,103,32,94"
+		HREF="javascript:alert('An operating room. Six bunk beds line the walls.');"
+		onMouseOver="self.status='An operating room with six bunk beds'; return true"
+		ALT="Operating Room">
+
+	<AREA NAME="Unexplored" SHAPE="CIRCLE" COORDS="111,112,110"
+		HREF="javascript:alert('The remainder of the tower was not explored.');"
+		onMouseOver="self.status='Unexplored region'; return true"
+		ALT="Unexplored">
+	<AREA NAME="Bridge" SHAPE="RECT" COORDS="98,222,124,231"
+		HREF="javascript:alert('The bridge to the Tower of the Darkweaver.');"
+		onMouseOver="self.status='Bridge to Darkweaver'; return true"
+		ALT="Bridge">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,224,232"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #7 Lower level">
+</MAP>
+
+<MAP NAME="tower13">
+	<AREA NAME="Weaver" SHAPE="RECT" COORDS="104,136,115,147"
+		HREF="javascript:alert('An enemy was detected here. It is some sort of Arachnid.');"
+		onMouseOver="self.status='An enemy'; return true"
+		ALT="Darkweaver">
+	<AREA NAME="Bridge" SHAPE="RECT" COORDS="126,0,144,27"
+		HREF="javascript:alert('The bridge to the Tower of Health');"
+		onMouseOver="self.status='Bridge to Tower of Health'; return true"
+		ALT="Bridge">
+
+	<AREA NAME="Utterlight1" SHAPE="POLY" COORDS="126,27,127,38,132,44,144,43,144,27,126,27"
+		HREF="javascript:alert('An Utterlight spell blasted an area clear of the Darkness.');"
+		onMouseOver="self.status='Cleared area'; return true"
+		ALT="Utterlight">
+	<AREA NAME="Utterlight2" SHAPE="RECT" COORDS="67,71,78,98"
+		HREF="javascript:alert('An Utterlight spell blasted an area clear of the Darkness.');"
+		onMouseOver="self.status='Cleared area'; return true"
+		ALT="Utterlight">
+	<AREA NAME="Dark" SHAPE="POLY" COORDS="144,27,108,27,108,45,63,45,63,81,26,81,26,99,126,99,126,81,162,81,162,63,144,63,144,27"
+		HREF="javascript:alert('The halls are filled with a sort of congealed Darkness.');"
+		onMouseOver="self.status='Congealed Darkness'; return true"
+		ALT="Darkness">
+
+	<AREA NAME="Unexplored" SHAPE="CIRCLE" COORDS="112,111,112"
+		HREF="javascript:alert('The remainder of the tower was not explored.');"
+		onMouseOver="self.status='Unexplored region'; return true"
+		ALT="Unexplored">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,224,237"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #13">
+</MAP>
+
+<H2>Chapter 11: The Doctor Will See You Now</H2>
+<H4>&quot;I have never met a subtle demon, small one.&quot; -- Zem (to Haer)</H4>
+
+<IMG SRC="../fonts/Z.gif" ALT="Z" BORDER=0 HEIGHT=72 WIDTH=73
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+em bolted to his feet, instantly awake. Rosvenir, standing guard, also felt it:
+a sense of impending doom. Gradually a murmuring chorus of lamentation was
+heard, not physically but mentally. Rosvenir's <I>Presence</I> spell located
+something slowly approaching the Tower of Chance via the lower walkway.
+Mystical dispelled the <I>Wall of Ice</I> blocking the window, that they might
+get a look at their opponent from a distance.
+<BR>&nbsp; It was difficult to discern at first. Against the constant haze
+pervading Moil, a creature of mist is impossible to detect. Gradually though,
+as it approached a thicker area of silvery fog could be distinguished from the
+background, advancing down the walkway toward the tower. It left the walkway
+and floated toward the window. Rosvenir cast <I>Unfog True</I> which dissipated
+all of the natural fog, leaving the misty creature easily discernable (and
+incidentally seeming to hurt it). Mystical hurled a <I>Fireball</I> at it while
+Zem loosed the <I>Lightning Blade</I> stored in his sword, and the battle was
+joined.
+<BR CLEAR=LEFT>
+<A HREF="pov.html"><IMG SRC="mystical.jpg" ALT="Mystical" BORDER=0
+	HEIGHT=375 WIDTH=400 ALIGN=LEFT HSPACE=3 VSPACE=1></A>
+&nbsp; The telepathic voices were becoming stronger and more strident,
+threatening to overwhelm the minds of the adventurers. Kurik was able to cast
+<I>Courage True,</I> which protected the party from the effects of the Fear. The
+creature floated close and began to flow into the room. The group backed into
+the hallway, while Rosvenir threw a <I>Starbolt</I> to slow its advance.
+
+<BR>&nbsp; Once in the hall, Zem invoked another <I>Lightning Blade</I> from
+his sword, which enraged the creature. Announced by a clap of thunder, four
+improbably solid tentacles extended from the insubstantial mist, striking
+Zem, Kurik, Rosvenir, and Mystical. The pseudopods were coated with an acid
+that began to dissolve anything it touched. Deciding that discretion was the
+better part of valor, the door was slammed shut and sealed with a <I>Wall of
+Ice.</I> Racing out to the bridge, Mystical created another <I>Wall of
+Ice</I> to seal the window. The mental voices could still be heard, showing
+that the creature was still alive, but the party decided to leave it trapped
+inside the room and move on.
+
+<BR>&nbsp; Unfortunately, Zem's sword had not tasted blood, which it required
+before it would return to its scabbard. He was unable to bring it to heel, and
+Endira's <I>Calming Song</I> failed to quell its hunger. The sword ripped from
+Zem's grasp and attacked the nearest target, Mystical. Zem managed enough
+warning for her to be prepared for it, and to parry each of the sword's uncanny
+thrusts. Endira continued her attempts at calming the blade, and Zem managed to
+grab its hilt but failed to control it. Eventually the blade dove in fast and
+low and managed to nick Mystical's leg before she parried it aside. Sated, the
+sword clanged to the floor.
+<BR CLEAR=LEFT>
+
+<P><U>Kahlen's journal</U>
+<BR>&nbsp; Endira could not identify the misty creature, though she thought
+it unique to this demi-plane and somehow related what Orcus had done. It was
+definitely not undead, and seemed to be composed of the mental energy of the
+victims of the curse.
+<BR>&nbsp; We left the Tower of Chance and through an empty tower, until we
+reached the lair of the Brine Dragon. It had been a full day since we had <A
+HREF="../h9/index.html#dragon">removed the key</A> from its hoard, though it
+had been very, very angry when we left. The enraged bellowing had stopped, but
+still I was quite concerned about encountering it for a second time. Zem crept
+onto the ledge but did not see the beast, and Rosvenir's <I>Presence</I> spell
+did not detect it within range. We traversed the tower as quietly as we could.
+
+<BRCLEAR=LEFT>
+<IMG SRC="tower7u.gif" ALT="Tower #7 Upper level" BORDER=0 HEIGHT=226
+	WIDTH=238 ALIGN=RIGHT HSPACE=3 VSPACE=1  USEMAP="#tower7u">
+&nbsp; We next reached a tower with a familiar symbol adorning its lintel: the
+coiled snakes of a caudacus, the symbol of the Healer. I must say that it was
+quite disconcerting to see the symbol of my own Order in the midst of a city of
+evil and undeath, covered by the frost of a curse of Orcus. Kurik's <I>Detect
+Enemies</I> spell revealed two, though Rosvenir's <I>Presence</I> detected
+one sentient being at a different location. A <I>Mind Typing</I> identified the
+sentient as some sort of construct, like a golem only more advanced, and a healer
+of some sort. Curiouser and curiouser. This was the first time in Moil we had
+detected something not immediately hostile.
+
+<P><U>The Narrator</U>
+<BR>&nbsp; The party proceeded immediately to the location of the sentient
+being, near the outer wall of the tower. Rosvenir <I>Merged</I> with the wall to
+get a look before opening the door. Beyond was a small room, and amidst the
+fragments of smashed and broken furniture a beautiful woman sat cross-legged
+on the floor. She had platinum blonde hair and pale skin, and sat with her head
+in her hands. Cautiously, the door was opened. The woman looked up, tears still
+wet upon her face. Her expression brightened, and she spoke as she stood.
+Mystical recognized the language as a demonic tongue, though she could not fully
+understand it. Rosvenir cast <I>Speech,</I> and began to interpret: &quot;Hello,
+are you feeling poorly? I'm a fully functional Medron, and I can help you with
+your wounds and hurts. Its been a long time since I've tended to anyone.&quot;
+<BR>&nbsp; Her name was Cyndia, Medron Magen. In the Moil of old, Magens were
+constructed to serve the populace. A Medron is a specialized Healer Magen.
+Cyndia was uncertain how many time units it had been since she had last tended
+to anyone, though she knew much time had passed. Her healing abilities still
+functioned, however, as she instantly cured frostbite and several wounds
+from the battle with the mist. Cyndia knew nothing of what had happened to
+Moil, and indeed had never left the tower since she was created by the Magen
+Makers. She agreed to escort the party to the bridge on the lower level, but
+would not leave the tower itself.
+
+<BR CLEAR=RIGHT>
+<IMG SRC="tower7l.gif" ALT="Tower #7 Lower level" BORDER=0 HEIGHT=232
+	WIDTH=224 ALIGN=RIGHT HSPACE=3 VSPACE=1  USEMAP="#tower7l">
+&nbsp; On the lower level another sentient being was magically detected.
+Intrigued, the party went to its location, which Cyndia said had been an
+operating ward. She immediately opened the door. The room beyond was clean and
+bright, with a dozen bunk beds lining the walls. A shadowy form descended from
+above and into the light of the room. &quot;Doctor Tar, how nice to see
+you!&quot; exclaimed Cyndia. Doctor Tar was another Magen, with the torso of a
+handsome human male with pale skin and platinum hair, and a mechanical lower
+body equipped with numerous appendages and manipulators. An articulated strut
+connected the doctor to the ceiling of the room, by which he was able to move
+about.
+<BR>&nbsp; The Doctor's diagnosis was immediate: he said everyone looked
+exhausted, and that they should come lie down on the beds so he could examine
+them further. Cyndia encouraged Kurik to lie down, and he did so briefly. When
+he tried to get up again the Doctor pushed him down hard and injected a
+sedative, which Kurik managed to resist. Pandeos grants him a great resistance
+to poisons.
+
+<P><A HREF="pov.html"><IMG SRC="doctor.jpg" WIDTH=400 HEIGHT=480 ALIGN=LEFT
+	BORDER=0 HSPACE=3 VSPACE=1></A>
+<U>Shizlink's hidden computer file</U>
+<BR>&nbsp; Baddo Doctor-bot spray sleep mist, no body sleepy but Endira and
+she out in hall. Me wanna rewire servos make him bash against walls, but me
+no there. Cyndi-bot grab Rosvenir. Doctor-bot spin circular saws, attack
+Zem. Me try reprogram computer, make baddo Doctor-bot cut own head off, but
+me no there so no worky. Kurik teleport outta room, Rosvenir too. Me wanna
+magnetize Doctor-bot canopy, load iron filings inna joints til no move, but
+canopy plastic so no worky even if me there. Mystical cast <I>Rapid Gravity
+Shifts,</I> make baddo Doctor-bot fly across room. Neat trick, me gotta
+develop that spell.
+<BR><I>&nbsp; [Editor's note: the gentle reader might be wondering how
+it is that <A HREF="../../kulthea/chars/shizlink/">Shizlink</A> appears in this
+Chronicle, where he is not even a <A HREF="../../kulthea/">player
+character</A>. The reader must understand that Shizlink has an
+exceedingly short attention span, and becomes destructive if not given
+something to do every now and then. Being a technomage, he is capable of
+extremely destructive bouts of destructiveness. This Chronicler decided
+to let him tell a portion of the tale.]</I>
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Cyndia had followed the party into the hallway, pleading with
+them to return so that the Doctor could examine them. Meanwhile the
+Doctor, saw blades spinning, careened wildly about the room under the
+influence of Mystical's spell. Concerned that Doctor Tar was
+malfunctioning, Cyndia rushed back in. Mystical sealed the doorway with
+a <I>Wall of Ice,</I> putting an end to the incident.
+<BR CLEAR=RIGHT>
+<IMG SRC="tower13.gif" ALT="Tower #13" BORDER=0 HEIGHT=237 WIDTH=224
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower13">
+&nbsp; The party crossed the bridge to the tower which Rosvenir's
+<A HREF="../h9/index.html#dream"><I>Dream</I></A> indicated as that of the
+Darkweaver. This tower was unlike the others the party had explored. It had
+no windows, and no inscription above the lintel. There was a door in the
+archway decorated with an ornate ram's head, a symbol of Orcus. A message
+had been crudely carved in the wood of the door, &quot;Ware the weaver in
+her lair. --D&quot;, another intriguing but completely useless message from
+Desatysso. <I>Presence</I> and <I>Detect Enemy</I> spells located an entity
+at the exact center of the tower. <I>Mind Typing</I> could not identify its
+race, though it seemed arachnoid. The party cast various defensive magics and
+opened the door.
+<BR>&nbsp; Inside, the tower was dark. Not just dark, but Dark. Strands of
+congealed blackness hung from the ceiling. Rosvenir cast
+<I>Utterlight,</I> but instead of the expected illumination it seemed to
+blast away a 5 foot square of the Darkness before being itself dispelled.
+Mystical threw a <I>Fireball</I> down the corridor which exploded on impact
+with the strands, burning away a twenty foot section. Tying themselves
+together with a length of rope, the party ventured into the Darkness.
+<BR>&nbsp; The strands parted slightly to allow passage.
+Feeling their way down several hallways, Rosvenir cast <I>Utterlight</I> again
+to create an oasis amidst the Dark. Rechecking their equipment, the party
+continued a short way further before realizing that blindly following the
+Weaver's maze would be a great way to get themselves killed. When they
+attempted to return to the cleared area, the strands of Darkness suddenly
+became belligerent, actively opposing movement. Nonetheless by benefit of the
+rope tying them together, the adventurers struggled back and regrouped.
+Trying a different tack, Mystical began an <I>Intangible Object</I> spell
+to affect the wall closest to the center of the tower, planning to burst
+in on the Darkweaver unannounced.
+
+<BR CLEAR=RIGHT>
+
+<P><CENTER>
+Prev: <A HREF="../h10/index.html">The Tangled Web We Weave</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h12/index.html">Urban Renewal</A>
+
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 7,000
+<LI>Mystical 7,000
+<LI>Endira 6,750
+<LI>Rosvenir 6,750
+<LI>Kurik 6,750
+<LI>Zem 6,500
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

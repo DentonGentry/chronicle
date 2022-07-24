@@ -1,0 +1,632 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #17">
+   <META NAME="generator" CONTENT="BBEdit 6.1.2">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>One Final Can of Whoop-Ass</TITLE>
+
+   <MAP NAME="void1">
+	<AREA NAME="WOSMU" SHAPE="RECT" COORDS="81,237,126,313"
+		HREF="javascript:alert('The Wall Of Swarming Mutated Undead, or W.O.S.M.U. for short. The W.O.S.M.U. appears as a shifting pile of undead body parts, which crushes anything which wanders onto the cleared pathways. The W.O.S.M.U. cannot reach above a height of five feet.');"
+		onMouseOver="self.status='The Wall Of Swarming Mutated Undead'; return true"
+		ALT="W.O.S.M.U. (Wall Of Swarming Mutated Undead)">
+	<AREA NAME="Lab" SHAPE="RECT" COORDS="126,237,162,309"
+		HREF="javascript:alert('Densely inscribed vellum covers the walls, packed with diagrams of the Planes and the anatomical details of various races. A globe of black light sits at the center of the room. A metal cylindrical sarcophagus rests at a 45 degree angle.');"
+		onMouseOver="self.status='Laboratory with planar diagrams and metal sarcophagus'; return true"
+		ALT="Laboratory with sarcophagus">
+	<AREA NAME="Tarnhem" SHAPE="RECT" COORDS="113,189,125,203"
+		HREF="javascript:alert('The Balor Tarnhem stands to one side of the door, awaiting the entrance of the adventurers.');"
+		onMouseOver="self.status='Tarnhem waits beside door'; return true"
+		ALT="Tarnhem">
+	<AREA NAME="Haer" SHAPE="RECT" COORDS="8,95,24,111"
+		HREF="javascript:alert('Haer Gronagin kneels within a steel cage, weeping.');"
+		onMouseOver="self.status='Haer Gronagin in steel cage'; return true"
+		ALT="Haer Gronagin">
+
+	<AREA NAME="Phylactery" SHAPE="CIRCLE" COORDS="103,103,35"
+		HREF="javascript:alert('The Phylactery of the Devourer is an enormous green gemstone, thirty feet across. Faces appear fleetingly in the facets of the gem.');"
+		onMouseOver="self.status='Phylactery holds souls of the lost'; return true"
+		ALT="Phylactery">
+	<AREA NAME="Void" SHAPE="CIRCLE" COORDS="103,103,45"
+		HREF="javascript:alert('An opening in the floor reveals the oily blackness of the Final Void.');"
+		onMouseOver="self.status='Opening in floor to Final Void'; return true"
+		ALT="Final Void">
+	<AREA NAME="Tripod" SHAPE="CIRCLE" COORDS="103,103,54"
+		HREF="javascript:alert('The Phylactery is suspended above the Void on an enormous metal tripod.');"
+		onMouseOver="self.status='Phylactery rests on metal tripod'; return true"
+		ALT="Tripod holds Phylactery">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,209,315"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+   <MAP NAME="secret">
+	<AREA NAME="Phylactery" SHAPE="CIRCLE" COORDS="51,154,35"
+		HREF="javascript:alert('The burned out Phylactery of the Devourer was dropped into the Negative Material Plane.');"
+		onMouseOver="self.status='Phylactery dropped into Void'; return true"
+		ALT="Phylactery destroyed">
+	<AREA NAME="Void" SHAPE="CIRCLE" COORDS="51,154,45"
+		HREF="javascript:alert('An opening in the floor reveals the oily blackness of the Final Void.');"
+		onMouseOver="self.status='Opening in floor to Final Void'; return true"
+		ALT="Final Void">
+	<AREA NAME="Tripod" SHAPE="CIRCLE" COORDS="51,154,54"
+		HREF="javascript:alert('The Phylactery was suspended above the Void on an enormous metal tripod.');"
+		onMouseOver="self.status='Phylactery rested on metal tripod'; return true"
+		ALT="Tripod held Phylactery">
+
+	<AREA NAME="Door" SHAPE="RECT" COORDS="113,68,120,79"
+		HREF="javascript:alert('A secret door in the far wall leads to the exit.');"
+		onMouseOver="self.status='Secret door in far wall'; return true"
+		ALT="Secret door">
+	<AREA NAME="Table" SHAPE="POLY" COORDS="172,5,187,21,178,30,163,13"
+		HREF="javascript:alert('A stone topped, wrought iron table supporting a variety of magic objects.');"
+		onMouseOver="self.status='Stone table holds magic items'; return true"
+		ALT="Table with items">
+	<AREA NAME="Chest" SHAPE="RECT" COORDS="143,4,153,10"
+		HREF="javascript:alert('A metal chest holds a dazzling amount of wealth.');"
+		onMouseOver="self.status='Chest holds great wealth'; return true"
+		ALT="Treasure Chest">
+	<AREA NAME="Gate" SHAPE="RECT" COORDS="145,51,186,58"
+		HREF="javascript:alert('The Maelstrom gate, a passage to other Planes which only the Undead may safely traverse.');"
+		onMouseOver="self.status='Maelstrom gate,only Undead may use'; return true"
+		ALT="Maelstrom Gate">
+	<AREA NAME="Wight" SHAPE="RECT" COORDS="150,28,159,37"
+		HREF="javascript:alert('A Winter Wight, waiting to attack a weakened party after the battle with Acerak. It was destroyed using the Wand of Days.');"
+		onMouseOver="self.status='Winter Wight destroyed by Wand of Days'; return true"
+		ALT="Winter Wight">
+
+	<AREA NAME="Room" SHAPE="RECT" COORDS="130,0,191,61"
+		HREF="javascript:alert('The Winter Wight in this room was instantly obliterated by the Wand of Days.');"
+		onMouseOver="self.status='Secret room with Winter Wight'; return true"
+		ALT="Secret Room">
+
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,193,206"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<H2>Chapter 17: One Final Can of Whoop-Ass</H2>
+<H3>&quot;Lets go get Haer. I need the Bag of Holding to get those
+	books.&quot; --Rosvenir</H3>
+
+&nbsp;<BR><A NAME="vrock"><IMG SRC="../fonts/T.gif" ALT="T" BORDER=0
+	HEIGHT=72 WIDTH=76 ALIGN=LEFT HSPACE=3 VSPACE=1></A>
+he Vrock slashed at Mystical, passing harmlessly through her intangible form.
+She encased the demon in a cubical <I>Wall of Ice,</I> and then <I>Rapid
+Gravity Shifts</I> flung it about within. Not content to leave it at that,
+she created a <I>Barrier Pit</I> under the icy cage to drop the whole thing
+into the Negative Material Plane.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;I'm gonna start hacking at Rosvenir with my
+	battleaxe... The vines, I mean.&quot;
+	--<A HREF="../chars/kurik/">Kurik</A></B></CENTER>
+
+<P>&nbsp; Meanwhile, Rosvenir had inhaled some sort of spore from the demon
+when it attacked. As he stumbled back green vines began to erupt painfully
+from his body. He flew down the tunnel and through the gate, collapsing in a
+heap in front of his companions. The vines had begun to constrict and hamper
+his breathing, but somehow the mage cast <I>Neutralize Poison</I> which
+stopped further spread. Kurik cut away at the vines until Mystical returned
+and cast <I>Unpoison.</I> The demonic foliage immediately withered and died.
+
+<BR>&nbsp; Kahlen, lost in thought for her old friend, noticed a note in her
+lap. She had no idea how it got there, nor how long it had been there. She <A
+HREF="haernote.html">read</A> it with growing alarm: it was from Haer. He
+claimed that Kurik had been responsible for his disappearance, and for the <A
+HREF="../h16/index.html#sorcery">magical assault</A> on the party the previous
+day. The note claimed that Kurik was a Vampire. Kahlen circulated the note to
+the rest of the party sans Kurik. Each adventurer contemplated the revelation
+of Kurik's condition, but weighed this against the fact that he had done
+nothing overtly evil and retained the favor of his god Pandeos. The group
+collectively decided that Kurik posed no threat, and made no move against the
+vampire. <I>[Editor's note: the player of Haer attributes this inaction to a
+staggering display of roleplaying apathy.]</I>
+
+<P><CENTER><B>&quot;He cast the <I>Detect Haer</I> spell.&quot;
+	--<A HREF="../chars/mystical/">Mystical</A></B></CENTER>
+
+<P>&nbsp; <A NAME="illusion">Now</A> determined to recover their comrade Haer
+Gronagin, the entire party cast various <I>Fly</I> spells and marched through
+the gate. Mystical led the way, and spotted the halfling at the mouth of the
+tunnel on the other side. Haer looked startled and immediately ran away
+towards the trap door. Mystical attempted <I>Levitation</I> to stop him in his
+tracks, but could not lock onto anything. Rosvenir's <I>Finding</I> spell did
+not locate the halfling, and Mystical's <I>Presence</I> found only five (two
+fewer than <A HREF="../h16/index.html#haer">before</A>). Obviously what she
+had seen had been an illusion, as Haer was no longer in this portion of the
+Fortress of Conclusion.
+
+<BR>&nbsp; Crossing back through the gate, the party marched through the
+pentagonal room, and used <I>Fly</I> to cross the <A
+HREF="../h16/index.html#wosmu">W.O.S.M.U.</A> In the relative safety
+of these central chambers, Rosvenir cast <I>Mind Voice</I> to attempt
+communication with Haer Gronagin. Receiving no response, a <I>Finding</I>
+spell located him somewhere beyond the laboratory. Kurik's <I>Detect
+Enemies</I> located approximately 100,000, mostly the disparate elements of
+the W.O.S.M.U.
+
+<BR>&nbsp; With <I>Woodsight</I> Meilu could see a 10' square room beyond the
+furthest door. The party gathered in this small chamber, in front of an iron
+door set in the opposite wall. <I>Stonesight</I> revealed the room beyond.
+
+<P><U>Meilu's report to the High Priestess of the Goddess</U>
+<BR><IMG SRC="void.gif" WIDTH=208 HEIGHT=314 BORDER=0 VSPACE=2 HSPACE=3
+		ALIGN=RIGHT ALT="The Phylactery" USEMAP="#void1">
+&nbsp; At first the <I>Stonesight</I> revealed only blackness, though not the
+oily blackness of the Negative Material Plane. I augmented the spell with
+<I>Darkvision,</I> and could at last perceive what lay ahead. It was a large
+domed chamber, some 50 feet across. In the center of this chamber, supported
+by a huge metal tripod, was what could only be the Phylactery of the Devourer.
+It appeared as a green gemstone nearly 20 feet across. In a way it was
+beautiful, though as the Goddess teaches, beauty is sometimes a shield to hide
+the appearance of Evil. That was definitely the case here. I could see the
+faces of the lost souls pressed up against the facets of the crystal. A
+horrible fate, to be sure.
+<BR>&nbsp; In the floor of the chamber directly beneath the Phylactery was a
+circular hole, exposing the Final Void beneath. The hole was large enough to
+accomodate the crystal. My companions have said that the Devourer's plan is to
+<A HREF="../h1/index.html#ahrens">merge</A> with the Final Void, upon which
+all knowledge would be his and he would become unto a God. I believe the
+Phylactery is the instrument by which Acerak would carry out this evil plan.
+<BR>&nbsp; A disembodied skull floated near the ceiling. As it slowly
+descended, I could see the two red gems in its eyesockets and a row of 6
+diamonds replacing its teeth. This could only be the demilich, Acerak. At the
+edges of my vision through the doorway I spotted a massive arm holding a whip.
+It was a demon, standing next to the doorway on the other side of the wall. My
+vantage was poor but I believed it to be <A
+HREF="../h16/index.html#tarnhem">Tarnhem</A>, Acerak's demonic father. We
+thought we had released Tarnhem from enslavement. Apparently not.
+<BR>&nbsp; At the far side of the room was a metal cage, and inside the cage
+was Haer Gronagin. The halfling sat motionless, and appeared to be crying.
+While plans were laid for the assault I continued to watch the Phylactery, and
+noticed the face of Haer Gronagin in one of the facets. The Devourer had
+already consumed his soul, but left the body nearby.
+
+<P><U>The Narrator</U>
+<BR>&nbsp; The final confrontation with Acerak lay ahead. The party took a few
+minutes to prepare, and to develop a strategy. The mad priest <A
+HREF="../h5/index.html#danele">Danele</A> had revealed that the Phylactery
+could be destroyed by the light of the Sun. The <A
+HREF="../items/index.html#wanddays">Wand of Days</A> therefore represented the
+best hope of defeating the Devourer. Accordingly, in addition to Rosvenir both
+Fineas and Mystical attuned to it. The party proceeded to cast a huge amount
+of defensive and preparatory magic.
+<BR CLEAR=RIGHT><UL TYPE=CIRCLE>
+	<LI>Mystical: <I>Shield, Enchanted Defense, Bladeturn, Toughness, Heat
+		Resistance, Darkvision</I> (from Fineas)
+	<LI>Zem: <I>Protection Sphere IV, Holy Aura True, Lightning Blade,
+		Enchanted Defense</I> (courtesy of Mystical),
+		<I>Darkvision & Haste</I> (from Fineas)
+	<LI>Kurik: <I>Protection Prayer IV, Unpain IV, Bladeturn III, Holy Aura True,
+		Darkvision</I> (from Fineas), <I>Enchanted Defense</I> (from Mystical)
+	<LI>Meilu: <I>Haste V, Darkvision, Concentration V, Lion's Heart,
+		Protection V, Adrenal Focus True, Body Weaponry IV,
+		Enchanted Defense</I> (from Mystical)
+	<IMG SRC="odds21.jpg" WIDTH=149 HEIGHT=78 BORDER=2 VSPACE=2 HSPACE=3
+		ALIGN=RIGHT ALT="Odds 2:1 in favor">
+	<LI>Rosvenir: <I>Dark Eyes, Unpain IV, Self Aura True, Cold Resistance
+		True, Heat Resistance True, Fly</I>
+	<LI>Fineas: <I>Darkvision, Fly, Enchanted Defense</I> (from Mystical)
+	<LI>Endira: <I>Darkvision, Enchanted Defense</I> (from Mystical)
+</UL>
+
+<P>&nbsp; At last all was in readiness. Fineas cast <I>Unstone</I> to destroy
+the wall surrounding the iron door, and it crashed inwards with a clatter. Zem
+was already in motion, his <I>Moving Attack</I> unbalancing the Balor and
+causing it to stagger back. The floating skull turned to face the adventurers,
+and as the melee commenced announced in rasping voice, &quot;Through hazard
+and danger you have made your way here, passing challenges both martial and
+cerebral. The journey was a hard one, but with each test you bested, your
+souls were further purified, until you stand before me now with empowered,
+shining spirits visible to those with eyes to see. I have use for such souls;
+you will provide the final catalyst for my union with the Negative Energy
+Plane itself! Let the Apotheosis begin!&quot;
+
+<P><A NAME="roshands">&nbsp; Rosvenir</A> heard a clatter at his feet. The
+Wand of Days had fallen to the ground. He did not think he had dropped it, but
+bent down to retrieve it nonetheless. He rose slowly, a look of horror on his
+face as he stared at the flesh covered stumps where once his hands had been.
+Rosvenir screamed.
+
+<BR>&nbsp; Tarnhem's whip snaked between the legs of the adventurers as if a
+thing alive. It coiled about the Wand, and a flick of the demon's wrist sent
+the artifact flying through the air. The Wand landed with an audible plop in
+the oily blackness at the exposed center of the room, and sank from sight.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;I think I'd like to change my action.&quot;
+	--<A HREF="../chars/rosvenir/">Rosvenir</A></B></CENTER>
+
+<BR CLEAR=LEFT><IMG SRC="tarnhem10.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 1, Adventurers 0" ALIGN=LEFT HSPACE=3 VSPACE=2>
+<IMG SRC="odds13.jpg" WIDTH=149 HEIGHT=78 BORDER=2 VSPACE=2 HSPACE=3
+	ALIGN=RIGHT ALT="Odds 3:1 against">
+&nbsp; Everything began to go wrong. Mystical's <I>Fireball</I> exploded in
+spectacular fury as it struck the leering skull, yet as the fires faded the
+skull was unharmed. Meilu swept at the Balor's legs, doing minor damage but
+failing to unbalance it. Endira cast <I>Controlling Song,</I> attempting to
+wrest control of the Balor away from the foul demilich, but failed. Fineas's
+<I>Death Cloud</I> had no effect on Acerak. Mystical was nearly overwhelmed by
+an evil spell, but resisted at the last moment. <I>[Editor's note: she used a
+Fate point to reroll her RR]</I>
+<BR>&nbsp; Gathering his wits with remarkable speed, Rosvenir knew that the
+only hope of survival lay in recovery of the Wand of Days. The mage
+concentrated on a <I>Lord Location</I> spell to find it. The result made his
+heart sink: the spell could not locate the Wand. It had already crossed into
+the Negative Material Plane, and was therefore truly lost.
+<BR><A NAME="kurikvoid">&nbsp; Kurik</A> proclaimed, &quot;My soul is of no
+use to you now Acerak, your minions have seen to that!&quot; as he ran towards
+the opening to the Negative Material Plane. Kurik's facial features shifted as
+he moved, his fangs lengthening and brow thickening. Now displaying his true
+nature as a Vampire, the paladin flew across the room with inhuman speed and
+pursued oblivion by diving into the Final Void.
+<BR>&nbsp; Meilu and Zem, both <I>Hasted,</I> struck at Tarnhem again. Meilu's
+attack was ineffective, while Zem's sword struck only a glancing blow. Tarnhem
+lashed out at Zem, injuring the warrior and stunning him (though <I>Unstun
+True</I> proved effective).
+<BR>&nbsp; Mystical felt a strange sensation at the edges of her
+consciousness. She tried to resist the magic, but the sensation grew first to
+painful, thence to a violent tearing at her mind. Mystical's lifeless body
+crumpled to the ground as her soul was torn forth. The energy of her
+life force was sucked into the Devourer's Phylactery. <I>[Editor's note:
+Mystical used both remaining Fate points to reroll her RR. She failed
+both times.]</I>
+
+<P>&nbsp; Fineas switched to Alternate Plan B, such as it was. He cast
+<I>Unstone</I> beneath one of the three legs holding up the Phylactery. The
+leg plunged through and into the Negative Material Plane until striking the
+side of the hole thus created. The structure shifted several feet, the whole
+canted at an angle to the floor. Even as the Phylactery settled the souls
+within pressed up against the facets of the gem and shouted in unison:
+&quot;To destroy Acerak's Phylactery is to destroy us as well. The Void will
+claim our spirits forever!&quot; Obviously the trapped souls were not fond of
+Alternate Plan B.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;We're all focussed on the demon. Should
+	we send an attack at the floating skull?&quot; --Fineas</B></CENTER>
+
+<P>
+<IMG SRC="tarnhem11.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 1, Adventurers 1" ALIGN=LEFT HSPACE=3 VSPACE=2>
+&nbsp; Endira recast <I>Controlling Song,</I> and this time it succeeded.
+Acerak's control of Tarnhem was broken, and Endira ordered the Balor to
+&quot;destroy Acerak.&quot;
+<IMG SRC="acerak.jpg" WIDTH=240 HEIGHT=240 BORDER=0
+	VSPACE=2 HSPACE=3 ALIGN=RIGHT ALT="Acerak">
+<BR><A NAME="vaccuum">&nbsp; Even</A> as the demon turned to face his progeny,
+the air within the square room began to thin drastically. Endira, sensing what
+was happening, managed to avoid the shockwave from the <I>Major Vacuum</I>
+which struck next, and her song was unaffected. Kahlen, Fineas, and Rosvenir
+were not so lucky, suffering broken bones and concussive damage. Rosvenir
+returned fire with a <I>Vacuum I</I> on Acerak, but did no damage to the
+demilich.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;<U>I</U> took more damage from the spell
+	than he took.&quot; --Zem</B></CENTER>
+<P><IMG SRC="tarnhem21.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 2, Adventurers 1" ALIGN=LEFT HSPACE=3 VSPACE=2>
+&nbsp; In booming voice the skull of Acerak called out, &quot;Maasgheldur by
+use of your True Name I command you!&quot; Endira's <I>Controlling Song</I>
+was broken, and Tarnhem turned to attack the party. The struggle for control
+must have jarred the demon's concentration as his sword missed Zem by almost a
+yard. Zem parried the demon's whip, and counterattacked using <I>Holy Attack
+True.</I> A total attack roll of 290 was sufficient for only 9 points of
+damage against Tarnhem. Meilu, previously <I>Hasted</I> by Fineas, executed
+martial strikes in rapid succession but did very little damage to the demon.
+<BR><A NAME="zemhands">&nbsp; Clearly,</A> this battle would not be won by
+wearing down the opponents. Then Zem heard a clattering as his Claymore hit
+the floor. He knew what had happened even before looking: his hands were gone.
+The sword lay still only briefly before being roused by its unsatisfied hunger
+for blood, flying up to attack indiscriminately. Fortunately the sword had
+fallen close to the Balor, and chose the demon as its first target.
+
+<P><CENTER><B>&quot;If Kurik had cast <I>Inspiring Ways</I> and <U>not</U>
+	been an evil Undead I'd be fine.&quot; --Meilu</B></CENTER>
+
+<P><A NAME="kurikwand">&nbsp; Suddenly</A> there was a disturbance in the
+exposed circle of the Final Void. The Wand of Days rose majestically from the
+oily blackness. Safe from the ravages of the Negative Material Plane due to
+his vampiric nature, Kurik had retrieved the Wand and now clutched it tightly
+in one gauntleted hand. Erupting from the nothingness Kurik moved with
+preternatural speed across the chamber to give the Wand to Fineas. Fineas in
+turn held the Wand crooked in one arm (in case he suddenly found himself
+lacking hands).
+
+<BR CLEAR=LEFT><IMG SRC="tarnhem22.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 2, Adventurers 2" ALIGN=LEFT HSPACE=3 VSPACE=2>
+&nbsp; Now aware of Tarnhem's True Name, Rosvenir's <I>Voice of Command</I>
+was greatly enhanced: &quot;Maasgheldur, destroy Acerak.&quot; The huge demon
+turned and flew back towards the floating skull.
+<BR>&nbsp; The party was suffering badly from the effects of powerful spells.
+Kurik paused to cast <I>Inspiring Ways,</I> invoking the power and glory of
+Pandeos to assist his companions in resisting the effects of magic.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;Aren't you also a creature of
+		darkness?&quot; --<A HREF="../chars/zem/">Zem</A><BR>
+	&quot;More of a charcoal grey.&quot;
+		--<A HREF="../chars/mystical/">Mystical</A></B></CENTER>
+
+<P><IMG SRC="tarnhem32.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 3, Adventurers 2" ALIGN=LEFT HSPACE=3 VSPACE=3>
+&nbsp; Tarnhem's powerful blow sent the skull flying across the room to impact
+the far wall. A crack appeared in the skull, echoing the much larger crack
+made in the wall. Wobbling slightly in the air, Acerak spoke: &quot;Father by
+your True Name Maasgheldur I command you!&quot; Rosvenir's control was
+sundered.
+<BR>&nbsp; Fineas touched the wand, still clutching it with one arm. He made a
+rude gesture at the floating skull with his other hand as he spoke the command
+word: &quot;kindle&quot;... Nothing happened. The power of the Wand was
+completely absorbed by the unnatural darkness in the room.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;Losing my hands, ironically enough, isn't
+	my number one problem right now.&quot; --Rosvenir</B></CENTER>
+
+<P><IMG SRC="tarnhem33.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 3, Adventurers 3" ALIGN=LEFT HSPACE=3 VSPACE=3>
+&nbsp; Endira had also incorporated the Balor's True Name into her song.
+Augmented by its power, her <I>Controlling Song</I> wrested mastery of the
+mighty demon away from the demilich. The demon turned to face Acerak once
+again.
+<BR><A NAME="fineasabsorb">&nbsp; Zem,</A> his combat effectiveness greatly
+reduced by the maiming, turned <I>Invisible</I> and waited for an opportunity.
+Fineas felt the hint of a spell beginning to effect him. He used the <A
+HREF="../items/index.html#absorptionstone">absorption stone</A> to counteract
+the incoming magic. The stone, having reached its capacity, disintegrated into
+dust.
+<BR>&nbsp; Meilu leaped high into the air, launching multiple attacks on
+Acerak as she soared past. Though very impressive (like something out of a
+kung fu movie) the attack did no damage to the skull. However, Tarnhem's sword
+struck true and sent his hated son slamming into another wall with ruinous
+effect. Acerak's skull looked somewhat the worse for wear, with numerous
+cracks scattered across its surface.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;I'll cast <I>Haste</I> on him, then run
+	like a coward over there.&quot; --Fineas</B></CENTER>
+
+<P><IMG SRC="tarnhem43.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 4, Adventurers 3" ALIGN=LEFT HSPACE=3 VSPACE=3>
+&nbsp; Acerak spoke once again, commanding Tarnhem to attack the party and
+invoking his True Name. The Balor turned to face the adventurers.
+<BR>&nbsp; Kurik's <I>Utterlight</I> had no effect, completely subsumed by the
+powerful magical darkness cloaking the room. Rosvenir cast <I>Utterlight V</I>
+with similar results: none of the five was able to overwhelm the magical
+blackness.
+<BR CLEAR=RIGHT><A NAME="fineaswound">&nbsp; Fineas</A> resisted some sort of
+magical attack, and flew to the opposite side of the room to place the bulk of
+the Phylactery between himself and the rest of the conflict. He failed another
+resistance roll as he flew, and sustained heavy damage from some sort of
+magical attack. The mage persevered, and set the Wand directly against the gem
+as he triggered its power. The tip barely glowed, and the Phylactery was
+undamaged. The magical Dark had withstood the power of the Wand once again.
+<IMG SRC="odds110.jpg" WIDTH=149 HEIGHT=78 BORDER=2 VSPACE=2 HSPACE=3
+	ALIGN=RIGHT ALT="Odds 10:1 against">
+<BR>&nbsp; Tarnhem (under the control of Acerak at this time) soared through
+the air towards Fineas, planning to take the Wand away. Zem, <I>Invisible</I>
+and flying, intercepted the huge demon with a perfect tackle. Deflecting
+Tarnhem away from the mage, he and the demon plummeted to the floor below.
+Zem, bloodied and bruised, failed to resist the effect of the Phylactery. His
+body crumpled to the ground as his life force was sucked out to join the rest
+of the souls trapped within.
+<BR>&nbsp; Kurik's second <I>Utterlight</I> was no more effective than his
+first. Now out of power points, the paladin hefted his battleaxe and charged
+the mighty Balor.
+<BR><A NAME="fineasdone">&nbsp; Fineas</A> had flown back to the ground.
+Turning now to face the center of the room, he was overcome by a magical
+attack which knocked him unconscious before he could activate the Wand again.
+He fell to the floor. Rosvenir, a short distance away, dove for the artifact
+still gripped tightly in the elf's hand.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;I'm actually beginning to run out of power
+	points.&quot; --Rosvenir</B></CENTER>
+
+<P><IMG SRC="tarnhem44.gif" WIDTH=92 HEIGHT=66 BORDER=0
+	ALT="Acerak 4, Adventurers 4" ALIGN=LEFT HSPACE=3 VSPACE=3>
+&nbsp; Weakened by the combat, Acerak's control of his demonic father slipped
+and Endira's <I>Controlling Song</I> triumphed. Tarnhem must have been quite
+dizzy by this time, as he spun about to face the flying skull.
+<BR>&nbsp; Rosvenir touched the stump of his missing hand to the Wand of Days
+and spoke the word: &quot;kindle.&quot; The Wand responded. Finally its power
+overcame the darkness, and painfully bright light erupted from its tip. As
+the light swept the room it came into contact with the Phylactery, and cracks
+immediately spread across its surface. A golden beam of light smashed through
+the top of the Phylactery and punched a hole in the stone ceiling above. The
+golden light pulsed as first one, then two, then a flood of souls escaped
+the confinement.
+<BR>&nbsp; Kurik, his Vampiric nature unable to tolerate the touch of
+sunlight, burst into flames. He conjured a <I>Light Barrier</I> to shield
+himself. However, nothing could shield Acerak from the destruction of his
+Phylactery. Rasping out, &quot;I am undone... For now...&quot; the skull
+tumbled to the floor and shattered into pieces.
+<BR>&nbsp; The flood of souls escaping the Phylactery began to ease. Three of
+the last souls to escape moved away from the golden light and into the room.
+Appearing as glowing orbs of scintillating hues, two of the souls moved to the
+inert bodies of Mystical and Zem. Mystical gasped as her soul reunited with
+the flesh, while Zem simply opened his eyes and sat up. Kahlen rushed over to
+help them reorient, using up a ring of stored Clerical spells in the process.
+<BR>&nbsp; The third soul approached Haer Gronagin, who had been sitting in
+the steel cage weeping softly during the entire battle. The orb of light
+flashed a darker hue and moved rapidly about the motionless halfling. Haer's
+body shuddered and twitched, as if resisting the reunitement. Finally, a
+silver hued ball of energy was ejected from the halfling, as the body
+screeched an almost feminine scream. The silver energy began to break apart
+immediately, dissipating to nothingness.
+
+<BR CLEAR=LEFT><CENTER><B>&quot;Chaotic Evil means never having to
+	say you're sorry.&quot; --Ferranifer
+	(as <A HREF="../chars/haer/">Haer</A> Gronagin)</B></CENTER>
+
+<P>&nbsp; Haer looked up from the ground. He had no idea how he had come to be
+there, and thought he was in <A HREF="../h8/index.html">Moil.</A> His body had
+been taken over by <A HREF="../h6/index.html#ferranifer">Ferranifer</A>, one
+of Acerak's minions, when the party had reached Moil the week before. He
+found that the bars containing him were only illusions, and walked out into
+the room.
+
+<P><A NAME="ascend">&nbsp; The</A> radiance of the Wand of Days had not faded,
+and Kurik remained within his protective darkness. Suddenly this blackness was
+illuminated by a bright beam of golden light, radiating from a point
+immediately above the paladin. A booming voice called out, &quot;Holy Kurik,
+thou hast done well. I hast promised to release thee from thy torment.&quot;
+Kurik was freed from his vampiric affliction by the power of Pandeos. His body
+mouldered instantly to dust, leaving only a radiant spirit. Pausing briefly to
+smile at his former companions, the angelic Kurik ascended to the heavens to
+join the Heavenly Host of his god.
+
+<P>&nbsp; With the destruction of Acerak Tarnhem regained free will, shouting,
+&quot;Now I am truly free!&quot; He opened a gate to return to the Abyss, but
+paused at the threshold. &quot;I did promise to help you escape. Beyond this
+room are two means of escape. One will lead to your exit, the other will lead
+to your deaths.&quot; With that, the Balor was gone.
+
+<P>&nbsp; Mystical and Zem, weakened by the experience of having their souls
+ripped out, needed an hour to recuperate. Rosvenir, unable to stop thinking
+about the trove of knowledge in Acerak's <A
+HREF="../h16/index.html#lab">library</A>, convinced Haer to retrieve the
+books. Unfortunately Acerak had left traps, and Haer was hit by a
+<I>Firebolt</I> when he tried to remove one from the shelves. Unable to
+tolerate any more whoop-ass that day, the two adventurers left the library.
+
+<P>&nbsp; The Phylactery was cracked and ruined, and listed to one side on its
+damaged tripod. While Rosvenir and Haer explored the library Fineas completed
+Alternate Plan B, destroying another leg of the tripod. The huge gem tipped
+over and was swallowed by the Negative Material Plane.
+
+<BR>
+<IMG SRC="secret.gif" WIDTH=192 HEIGHT=205 BORDER=0 VSPACE=2 HSPACE=3
+		ALIGN=RIGHT ALT="Secret Room" USEMAP="#secret">
+<A NAME="table">&nbsp;</A> Tarnhem had indicated the far wall of the chamber
+held two exits. Haer immediately noted a secret door in the wall, and located
+the mechanism a moment later. Haer was obviously a much better thief than
+Ferranifer. Rosvenir, ignoring the loss of his hands through sheer force of
+will, cast <I>Presence.</I> There were two 16th level entities remaining in
+this portion of the Fortress, the first an undead fighter and the second an
+amphibian of some sort. Haer opened the secret door and crept silently down
+the hallway. The halfling's stealth was such that the <A
+HREF="../h9/index.html#wight">Winter Wight</A> at the end of the hall did not
+detect him. The Wight sat on a stool in a square room, the walls stained
+reddish brown. In the far corner was a wrought iron table with a stone top,
+upon which lay several gems and other items. A wooden chest sat next to the
+table, and a leering green mask hung on the wall.
+
+<BR>&nbsp; Haer crept back down the hall to relate his findings. The entire
+group entered the secret room. Fineas activated the Wand of Days before the
+Wight had even stood to deliver its soliloquy, so tired were they of undead.
+Haer located no traps on the chest, nor anywhere else in the room for that
+matter. Along the closest wall was a strange scintillating tapestry, more like
+a tear in space than cloth. Endira identified it as the Maelstrom Gate, which
+only Undead can safely traverse. There were an assortment of <A
+HREF="loot.html">items</A> on the table, including a silver whistle shaped
+like the Phantom Flyer. Fineas attuned to it: if blown within range of the
+Flyer it will come, and take you wherever you wish to go.
+
+<BR>&nbsp; The party was dreadfully weakened by the battle, and nearly out of
+power for spells. Even a slight threat might do them serious harm. Therefore
+they set up camp in the secret room, and got some much needed rest. Rosvenir
+cast <I>Dream IV</I> to learn of what was to come.
+
+<OL>
+	<LI>What is in the chest?
+	<LI>What does the mask do?
+	<LI>What will we encounter on the way back to the Prime?
+	<LI>How can we recover the books from Acerak's library?
+</OL>
+
+<P><U>Rosvenir's Dream</U>
+<BR><I>&nbsp; in the library... cast a powerful Dispel Arcane, powerful
+enough to remove the magical traps of the demilich... now touch the books, no
+fireball emerges... open one book, inside its covers is the contents of the
+chest... filled to the brim with treasure... buried within the coinage is a
+gateway to the Prime... sitting on the Phantom Flyer, about to land on the
+Prime... the mask lays on the ground... it grows to twenty times its size,
+takes a huge bite out of the ground and begins to chew...</I>
+
+<P><U>Day 32, Final Day</U>
+<BR>&nbsp; Rosvenir finally gave up on collecting the tomes in Acerak's
+library. Dispelling a 100th level Arcane spell would take forever. The chest
+was locked, but the key rested in it. Haer opened it, and a sharp intake of
+breath greeted the <A HREF="loot.html#chest">vast wealth</A> therein.
+Thousands upon thousands of coins, numerous gems, and copious magic items
+awaited the adventurers. They filled the Bag of Holding, plus the
+extradimensional <I>Hewards Handy Haversack</I> found amongst the items, and
+still didn't manage to gather it all. The remaining coinage was placed in the
+tithing bag of Pandeos, a final homage to the brave Sir Kurik Steadfast. The
+party hoped that no-one would be injured by the avalanche of gold when the
+tithing room was opened.
+<P>&nbsp; Fineas blew the silver whistle, and noted that it teleported back to
+its place on the table after sounding. He retrieved it, as one never knows
+when such a thing might come in handy. The Phantom Flyer rose up from the hole
+in the center of the room and perched on the stone floor. The party climbed
+aboard, held on as best they could (the unfortunates without hands were tied
+in), and said, &quot;the Free City of Greyhawk.&quot; Snuggles, aka the
+Phantom Flyer, dove back into the Negative Material Plane and thence to the
+Prime, depositing the weary adventurers just outside the city gates.
+Kahlen made arrangements for restoration of Zem and Rosvenir's hands by
+the Guild of Healers of the High Elves.
+
+<P><CENTER><I>This concludes the Return to the Tomb of Horrors. This
+	Chronicler hopes you have enjoyed the tale.</I></CENTER>
+
+<P><CENTER>
+Prev: <A HREF="../h16/index.html">Pressed Demon Under Glass</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../hpost/kurik.html">Kurik's Tale</A>
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 55,000 (but lose all XPs since <A HREF="../h8/index.html">Moil</A>
+	to Ferranifer) + 1 Fate Point
+<LI>Mystical 15,000 + 1 Fate point
+<LI>Endira 15,000 + 1 Fate point
+<LI>Rosvenir 15,000 + 1 Fate point
+<LI>Kurik 50,000 Grace points
+<LI>Zem 15,000 + 1 Fate point
+<LI>Meilu 13,000 + 1 Fate point
+<LI>Fineas 15,000 + 1 Fate point
+</UL>
+
+<P>Additionally the characters were given special rewards for successfully completing
+the Return to the Tomb of Horrors:
+<UL TYPE=CIRCLE>
+<LI>Haer - +1 Em bonus as a result of mingling with so many souls for so long.
+<LI>Mystical - special bonus to Spell Mastery: Arcane Barriers of +15.
+<LI>Endira - special adjustment to Calming Song: the target of the
+	spell is at -20 to resist.
+<LI>Rosvenir - special bonus of +20 to all lore and research relating
+	to the negative energy plane and undead.
+<LI>Kurik - joins the heavenly host serving Pandeos.
+<LI>Zem - special bonus of +10 to Will for constantly fighting with
+	the sword for control.
+<LI>Meilu - 1,000 grace points for fulfilling the mission from The Goddess.
+<LI>Fineas - special bonus of +15 to  any skill used to research
+	curses (e.g.: curse lore, basic research, etc.).
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

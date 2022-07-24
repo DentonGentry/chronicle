@@ -1,0 +1,461 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #16">
+   <META NAME="generator" CONTENT="BBEdit 6.1.2">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>Pressed Demon Under Glass</TITLE>
+
+   <MAP NAME="fortress1">
+	<AREA NAME="Archway" SHAPE="RECT" COORDS="193,0,210,4"
+		HREF="javascript:alert('A mist filled archway, leading back to the Fortress of Conclusion.');"
+		onMouseOver="self.status='Mist filled archway'; return true"
+		ALT="Misty archway">
+	<AREA NAME="Hezrou" SHAPE="RECT" COORDS="183,0,220,63"
+		HREF="javascript:alert('A blue tiled room where a Hezrou demon stood ready to attack. The gate from the Fortress empties into the middle of this room.');"
+		onMouseOver="self.status='Blue tiled room with Hezrou demon'; return true"
+		ALT="Hezrou demon">
+
+	<AREA NAME="BedroomA" SHAPE="RECT" COORDS="94,9,121,36"
+		HREF="javascript:alert('A ruined bedroom, the door still smoldering from Mysticals Fireball. Haer found a potion of Greated Far Sense and a rune of Root Rot.');"
+		onMouseOver="self.status='Smoldering, ruined bedroom'; return true"
+		ALT="Smoldering bedroom">
+	<AREA NAME="BedroomB" SHAPE="RECT" COORDS="67,9,94,36"
+		HREF="javascript:alert('A ruined bedroom, its once fine furnishings slowly disintigrating.');"
+		onMouseOver="self.status='Ruined bedroom'; return true"
+		ALT="Ruined bedroom">
+	<AREA NAME="BedroomC" SHAPE="RECT" COORDS="22,9,49,36"
+		HREF="javascript:alert('A sumptuous but ruined bedroom, containing a Quarterstaff +50. A statue in the corner came to life to attack.');"
+		onMouseOver="self.status='Sumptuous but ruined bedroom with animated statue'; return true"
+		ALT="Animated statue">
+	<AREA NAME="BedroomD" SHAPE="RECT" COORDS="22,36,49,65"
+		HREF="javascript:alert('A ruined bedroom, the door still smoldering from Mysticals Fireball.');"
+		onMouseOver="self.status='Smoldering, ruined bedroom'; return true"
+		ALT="Smoldering bedroom">
+	<AREA NAME="BedroomE" SHAPE="RECT" COORDS="22,65,49,92"
+		HREF="javascript:alert('A ruined bedroom, its once fine furnishings slowly disintigrating.');"
+		onMouseOver="self.status='Ruined bedroom'; return true"
+		ALT="Ruined bedroom">
+
+	<AREA NAME="Tarnhem" SHAPE="CIRCLE" COORDS="59,172,18"
+		HREF="javascript:alert('A five foot diameter crystalline cylinder extends floor to ceiling. Inside, scrunched up into a space barely large enough to contain its bulk, is a Balor demon. It is Tarnhem, the father of Acerak.');"
+		onMouseOver="self.status='Crystal cylinder holds a trapped Balor demon'; return true"
+		ALT="Tarnhem, a trapped Balor demon">
+	<AREA NAME="Pentagon" SHAPE="POLY" COORDS="23,122,95,122,117,191,59,233,0,191"
+		HREF="javascript:alert('Shelves along the walls of this pentagonal room are chock full of a wide variety of items and lore. A cylindrical crystalline chamber in the center of the room holds a Balor demon. The cage is about two sizes too small.');"
+		onMouseOver="self.status='Pentagonal room containing trapped Balor demon'; return true"
+		ALT="Pentagonal Room">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,221,234"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+
+   <MAP NAME="fortress2">
+	<AREA NAME="Components" SHAPE="RECT" COORDS="81,58,117,130"
+		HREF="javascript:alert('The benches and shelving of this room are stuffed to capacity with boxes, jars, and crates filled with various and sundry material components for spells and research.');"
+		onMouseOver="self.status='Storeroom of material components'; return true"
+		ALT="Material components">
+	<AREA NAME="Library" SHAPE="RECT" COORDS="45,130,117,202"
+		HREF="javascript:alert('The crystal shelves in this room are tightly packed with books and scroll cases, written in numerous languages on every topic imagineable.');"
+		onMouseOver="self.status='Crystal shelving densely packed with books'; return true"
+		ALT="Library">
+	<AREA NAME="Lab" SHAPE="RECT" COORDS="45,58,81,130"
+		HREF="javascript:alert('Densely inscribed vellum covers the walls, packed with diagrams of the Planes and the anatomical details of various races. A globe of black light sits at the center of the room. A metal cylindrical sarcophagus rests at a 45 degree angle.');"
+		onMouseOver="self.status='Laboratory with planar diagrams and metal sarcophagus'; return true"
+		ALT="Laboratory with sarcophagus">
+
+	<AREA NAME="WOSMU" SHAPE="POLY" COORDS="0,58,0,229,171,229,171,76,117,76,117,58"
+		HREF="javascript:alert('The Wall Of Swarming Mutated Undead, or W.O.S.M.U. for short. The W.O.S.M.U. appears as a shifting pile of undead body parts, which crushes anything which wanders onto the cleared pathways. The W.O.S.M.U. cannot reach above a height of five feet.');"
+		onMouseOver="self.status='The Wall Of Swarming Mutated Undead'; return true"
+		ALT="W.O.S.M.U. (Wall Of Swarming Mutated Undead)">
+
+	<AREA NAME="Tarnhem" SHAPE="POLY" COORDS="192,0,197,9,208,12,208,0"
+		HREF="javascript:alert('A five foot diameter crystalline cylinder extends floor to ceiling. Inside, scrunched up into a space barely large enough to contain its bulk, is a Balor demon. It is Tarnhem, the father of Acerak.');"
+		onMouseOver="self.status='A crystal cylinder holds a trapped Balor demon'; return true"
+		ALT="Tarnhem, a trapped Balor demon">
+	<AREA NAME="Pentagon" SHAPE="POLY" COORDS="154,0,150,13,208,55,208,0"
+		HREF="javascript:alert('Shelves along the walls of this pentagonal room are chock full of a wide variety of items and lore. A cylindrical crystalline chamber in the center of the room holds a Balor demon. The cage is about two sizes too small.');"
+		onMouseOver="self.status='Pentagonal room holds trapped Balor demon'; return true"
+		ALT="Pentagonal Room">
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,210,231"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+
+   <MAP NAME="haer">
+	<AREA NAME="GreenTile" SHAPE="RECT" COORDS="96,83,132,102"
+		HREF="javascript:alert('A long room tiled with green stone. Each tile is inscribed with a letter or number.');"
+		onMouseOver="self.status='Green tiled room with letters and numbers inscribed.'; return true"
+		ALT="Green Tiled room">
+
+	<AREA NAME="Haer" SHAPE="RECT" COORDS="24,71,31,78"
+		HREF="javascript:alert('A locate spell placed Haer Gronagin here.');"
+		onMouseOver="self.status='Locate spell found Haer here'; return true"
+		ALT="Haer Gronagin">
+
+	<AREA NAME="Archway" SHAPE="RECT" COORDS="106,42,122,46"
+		HREF="javascript:alert('An archway filled with Orange mist. The stones glow softly upon the parties entrance.');"
+		onMouseOver="self.status='Archway with orange mist.'; return true"
+		ALT="Archway">
+	<AREA NAME="Tunnel" SHAPE="POLY" COORDS="26,4,82,4,82,44,95,44,95,52,72,52,72,15,26,15,21,9"
+		HREF="javascript:alert('A concealed door in the floor reveals a tunnel to a black tiled room.');"
+		onMouseOver="self.status='Tunnel to black tiled room'; return true"
+		ALT="Tunnel">
+	<AREA NAME="BlackTile" SHAPE="RECT" COORDS="95,44,133,82"
+		HREF="javascript:alert('A room tiled with one foot black stone tiles. There is an archway in one wall.');"
+		onMouseOver="self.status='Black tiled room'; return true"
+		ALT="Black tiled room">
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,135,104"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<H2>Chapter 16: Pressed Demon Under Glass</H2>
+<H3><FONT SIZE="-1">or,</FONT> Haer Today, Gone Tomorrow</H3>
+<H3><FONT SIZE="-1">or,</FONT> The Glass Demonagerie</H3>
+
+&nbsp;<BR><IMG SRC="../fonts/T.gif" ALT="T" BORDER=0 HEIGHT=72 WIDTH=76
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+he <A HREF="../h15/index.html#odie">freshly Undead</A> Dretch with a crooked
+head shambled slowly out of view. Attempts to scry through the arch using
+<I>Far Sight, Listen,</I> and similar spells uniformly failed. Mystical cast
+<I>Intangible Form</I> on herself, but was unable to pass through the gate
+in that state. After much gnashing of teeth, the adventurers determined that the
+only workable plan was to cast defensive spells and charge through to face
+whatever had decapitated poor Odie (as they had nicknamed the Dretch).
+
+<BR>&nbsp; Zem and Kurik led the way. The arch transported them to the center
+of a blue tiled room, where they were immediately attacked from behind. Though
+Zem was dragged backwards by the powerful grip of the foe, their protective
+magics held and the two sustained little damage.
+<IMG SRC="stench.gif" WIDTH=235 HEIGHT=136 BORDER=0 VSPACE=3 HSPACE=2 ALIGN=RIGHT>
+The smell, on the other hand, was nearly overwhelming. The relationship
+between the power of a tanarr'ii and the offensiveness of their body odor is
+worthy material for sagely study. By this measure, the Hezrou demon they now
+faced was clearly much more potent than the <A
+HREF="../h14/index.html#glabrezu">Glabrezu</A> encountered earlier, though the
+Glabrezu had been no slouch in the putrid stench department.
+<BR>&nbsp; Zem engaged the demon while the rest of the party charged through
+the archway. Each adventurer had to contend with the overpowering odor of the
+creature, which impeded all maneuvers by -20. Meilu was overwhelmed by it,
+giving in to waves of nausea and retching. The demon shouted in a strange,
+guttural tongue, opening another gateway on the far side of the room. Through
+this second gate could be seen a blistering, fiery landscape with black skies
+and seas of molten rock. It looked like one of the lower Pales.
+<BR>&nbsp; Zem slashed at the foe, wounding it slightly, and it clawed him
+in turn. Rosvenir's <I>Flash</I> spell was ineffective. The demon created a
+<I>Wall of Fire</I> to hold the rest of the party at bay. Mystical,
+anticipating the flood of foul beasts to come through the gate it had just
+opened, sealed it inside a <I>Wall of Stone.</I> She rapidly followed this
+with concentric walls of <I>water</I> and <I>ice.</I> These barriers thwarted
+the horde of demonlings which had been about the rush through. Instead, the
+impedance mismatch of the different materials surrounding the gate spawned a
+wormhole which sent the mass of screaming hordelings plummeting to an
+alternate Prime Material Plane, where they attacked a bar mitzvah.
+
+<P>&nbsp; Fineas attempted to use <I>Dispel Essence</I> to dissolve the
+<I>Wall of Fire</I> separating the party from Zem and the demon. Unable to
+concentrate due to the stench of the place, this spell was poorly cast. An
+Elvish brain is made up of equal parts tissue and magic. The <I>Dispel</I>
+mistakenly began to break down these magical bonds within Fineas rather than
+the intended target, which would have turned the elven mage into a blithering
+idiot had not he realized the error to refocus the spell. The <I>Wall of
+Fire</I> was dispelled. <I>[Editor's note: Fineas open-ended the spell fumble,
+which would have been catastrophic had he not used a Fate point to reroll].</I>
+<BR>&nbsp; Zem pressed the attack, using <I>Death Strike</I> to good effect.
+His sword struck deep, severing an artery in the demon's neck. Blood gushed
+forth and the beastie crumpled to the ground. In an ostentatious display of
+munchkinism Zem continued the slashing motion around behind his back,
+decapitating the undead Dretch without even looking.
+
+<P>&nbsp;The body of the Hezrou was quickly chopped into pieces and thrown
+into the misty gateway before it had a chance to <A
+HREF="../h15/index.html">animate</A> as an Undead. A hallway led away from the
+room. Rosvenir cast <I>Presence,</I> finding one within range which <I>Mind
+Typing</I> identified as a 50th level demon.
+
+<P><U>Mystical</U>
+<BR CLEAR=RIGHT><IMG SRC="fortress1.gif" WIDTH=221 HEIGHT=234 BORDER=0
+	VSPACE=1 HSPACE=1 ALIGN=RIGHT USEMAP="#fortress1">
+&nbsp; The gate had deposited us in the center of the blue tiled room. There
+was a mist filled archway on the opposite wall, which we ignored. The hallway
+led one hundred feet or more away from the room. I was tired of being ambushed
+by demons, so I let a <I>Fireball</I> explore it for us. There were five
+bedrooms at the end of the hall. They hadn't been used in a long time, and all
+of the contents had fallen to ruin. The fireball set some of it on fire,
+cleansing it nicely.
+<BR>&nbsp; Haer rooted around in one room and found a potion of some sort. In
+another Zem found a valuable ring and a magic quarterstaff. Then a statue came
+to life to attack. I cast <I>Barrier Pit,</I> which opened into the black oily
+stuff of the Negative Material Plane. The statue fell in and was swallowed up.
+<I>[Editor's note: the potion of Greater Far Sense was in room A, and the
+quarterstaff +50 was in room C]</I>
+<BR>&nbsp; We continued down the hallway until it ended in a door. Meilu was
+using <I>Stonesight,</I> and could see a pentagonal room beyond. In the center
+of the chamber was a nightmarish creature trapped inside some sort of crystal
+cylinder. We opened the door. Even crammed up as it was, I could recognize the
+demon. It was a Balor, the mightiest of the tanarr'ii.
+
+<P><A NAME="tarnhem"><U>The Narrator</U></A>
+<BR>&nbsp; The Balor was confined in a transparent crystal prison
+approximately five feet in diameter, extending floor to ceiling. The demon
+noticed the adventurers immediately, and called out to them: &quot;Primes, I
+beseech your help! Quickly, before my son becomes aware of your penetration!
+Release me, and I will help you defeat him. I give one of you temporary leave
+to take up my sword, there on the shelf, and shatter this most accursed of
+containment vessels!&quot; The Balor presumably was <A
+HREF="../h12/index.html#dream">Tarnhem</A>, the Tanarr'ii mentioned in <A
+HREF="../h3/index.html#journal">Desatysso's journal</A> as the father of
+Acerak and the source of much of his power. He promised to return them to the
+Prime once his son was dispatched, and after some questioning the adventurers
+believed this. A huge sword lay on one of the shelves.
+
+<P><U>Zembahk Kaydian</U>
+<BR>&nbsp; The sword was a massive armament, appearing as a free standing
+lightning bolt. Generally it is not a good idea to handle the personal weapon
+of extra planar entities of such power, yet the Balor obviously desired to be
+freed. One can only imagine the fate in store for one bold enough to take it
+up without permission. The weapon was surprisingly light for its size. Perhaps
+it was indeed made of light made solid.
+<BR>&nbsp; I approached the cage. The sword on my back was obviously
+displeased at my use of a rival weapon, but for once made no attempt to
+interfere. I brought the sword around in an overhand arc, smashing the
+prison in a single blow. Shards of crystal showered the room. I fared well,
+but the lesser beings who are my travelling companions received various
+lacerations from the shrapnel.
+<BR CLEAR=RIGHT>
+<CENTER><IMG SRC="tarnhem.jpg" WIDTH=640 HEIGHT=480 BORDER=0
+	VSPACE=1 HSPACE=1></CENTER>
+
+<PRE><P><A NAME="battle"><U>Early draft of the RTOH Screenplay</U></A>
+956 INT -- INTERIOR OF FORTRESS -- INDETERMINATE TIME
+  The Balor rises majestically from the remnants of its cage. Spreading its
+  mighty wings the demon stretches, muscles bulging out everywhere. Its visage
+  is terrible [[ see if we can get something secondhand from the Creature Shop for
+  this ]]. The halfling Haer Gronagin turns and runs back down the hall in abject
+  terror.
+
+  Suddenly a <A HREF="../h9/index.html#wight">Winter Wight</A> appears near the Balor.
+
+  <B>Acerak:</B> <I>(to our heroes)</I> Your ingenuity surprises me; your reward awaits
+          you at the Hub.
+  <B>Acerak:</B> <I>(to Tarnhem)</I> As for you, father, your usefulness is at an end!
+
+  <STRIKE>The Winter Wight raised its arms, sending powerful magical energy at the Balor</STRIKE>
+  <I>[[ Special effects budget ran out halfway through production ]]</I> The Winter
+  Wight claws at the great demon, and the black flame begins to spread but then
+  mysteriously sputters out. The mighty Balor is far too powerful for such trifles
+  as Black Fire.
+
+  Zem tosses the lightning sword, which flies unerringly to the waiting hand of the
+  Balor. Tarnhem, obviously enjoying the heft of the sword in his hands, strikes a
+  mighty blow against the Wight. The undead staggers back, recovers, and lashes out
+  at Tarnhem a second time. The Black Fire begins to spread across the massive
+  shoulders of the tanarr'ii, but is once again extinguished. <I>[[ Cost savings: only
+  shoot the Black Fire once from two different camera angles. Who's gonna know? ]]</I>
+</PRE>
+
+<P><U>The Narrator</U>
+<BR>&nbsp; The combat lasted only two rounds before the lightning blade clove
+Acerak in twain. Raising his head to the heavens to release a tremendous roar,
+Tarnhem cried &quot;Free at last!&quot; Then the Balor disappeared. He had
+neglected the part of the bargain about helping the adventurers get back to
+the Prime.
+<BR><A NAME="sorcery">&nbsp; However,</A> the party took very little notice of
+the outcome, as something had happened to Endira. Her natural attractiveness
+had been... enhanced, and her appearance was now nothing short of breathtaking
+to the males. Fineas and Zem were enthralled by her allure, and very nearly
+came to blows to possess her. Suspecting the effects of magic, Meilu cast
+<I>Dispel Essence.</I> The supernatural jealousy possessing Zem and Fineas
+dissipated.
+<BR>&nbsp; No sooner had this effect faded when Kahlen felt incredible pain in
+her midsection, falling to the floor in agony. Rosvenir bent down to help
+her, which placed him exactly at the detonation point of some sort of
+violent concussive force. Rosvenir was thrown backwards while Kahlen skidded
+several feet along the ground. Both were lucky that the force had not thrown
+them into the stone walls, which would have crushed their ribcage and caused
+their deaths in 5 rounds <I>[Editor's note: Rosvenir and Kahlen each used a
+Fate point to avoid death from the E Impact criticals.]</I>
+<BR>&nbsp; Then the lights went out. All of them, including the <I>Projected
+Light</I> which Rosvenir had invoked. Obviously, this was a magical darkness.
+Meilu attempted to cast a second <I>Dispel Essence</I> but fumbled, mistakenly
+casting <I>See Invisible</I> instead.
+<BR>&nbsp; Zem cast <I>Realm Protection Sphere,</I> which enveloped the party
+in a magical shield to impede further magics from affecting them. Mystical
+crawled in the darkness to Kahlen, who was still writhing in pain. Mystical's
+attempt to cast an Arcane Healing spell went horribly awry, and she mistakenly
+cast a <I>Fireball</I> point blank at Kahlen's face. Fortunately the
+<I>Fireball</I> was cancelled by Zem's <I>Realm Protection Sphere</I> and no
+harm came of it. Mystical then cast a spell of healing on Kahlen. Rosvenir
+used <I>Utterlight</I> to counteract the magical darkness.
+<BR>&nbsp; As suddenly as they began, the magical attacks ended.
+
+<P>&nbsp; Haer Gronagin had disappeared during the ruckus, running away when
+the Balor emerged from its prison. Rosvenir cast <I>Finding,</I> but could not
+locate him. Others searched the bedrooms and hallways looking for the
+halfling, to no avail.
+<BR>&nbsp; Zem examined the shelves in the pentagonal room finding two
+interesting books, one tattered and one pristine. He opened the sturdier of
+the two, and felt a rush of adrenaline as it disappeared. <I>[Editor's note:
+It was a Manual of Gainful Exercise which increased Zem's Co stat by 1]</I>
+Rosvenir found a box of strange berries on another shelf. Being interested in
+lore rather more than roughage, he tossed them over his shoulder. The
+resulting explosion injured Zem, Endira, and Rosvenir.
+
+<P>&nbsp; The crystal shrapnel had badly injured Fineas, the magical attacks
+during the mighty battle had taken their toll, and the exploding berries
+proved the limit. The party set up camp to rest and recuperate. Kahlen's pain
+had faded, and she cast a number of spells of healing before giving in to
+sleep.
+<BR>&nbsp; Rosvenir cast <I>Commune,</I> asking: &quot;Is Haer still
+alive?&quot; The answer was a simple &quot;Yes.&quot; Rosvenir then cast
+<I>Dream IV</I> to know of these things:
+
+<OL>
+	<LI>Where is Haer?
+	<LI>How do we get to Haer?
+	<LI>How do we save Haer?
+	<LI>What is on the other side of the portal?
+</OL>
+
+<P><A NAME="dream"><U>Rosvenir's Dream</U></A>
+<BR><I>&nbsp; Running through a County Fair, as a child 7,000 years ago...
+playing games, wandering around... there is an archway filled with mist in the
+center of the fairground... Go through the arch, one side leads to the first
+room in the Fortress of Conclusion, the other to the room with black tiles...
+Move up, up into the distance, until can see the entire map of the Fortress...
+See Haer running around, moving from one part of the Fortress to another...
+Haer hops up and down like in a game of Whack a Mole... he keeps jumping up,
+yet never manage to hit him... Finally Haer opens a hole in the floor of the
+Fortress, and begins to dig... The map disappears, and the Devourer's
+phylactery glows into view... a whispered &quot;kindle&quot; activates the
+Wand of Days...</I>
+
+<P><A NAME="wosmu"><U>Day 31</U></A>
+<BR>&nbsp; Mystical checked for traps on the further door from the pentagonal
+room. Low, disturbing moans could be heard beyond. These emanated from a wide
+room at the end of the hall in which lay scattered a bloated, writhing mass of
+Undead body parts, mostly humanoid mixed with the occasional animal or
+monster. This was the Wall Of Swarming Mutated Undead, or W.O.S.M.U. for
+short, and a cleared path ran through it to each of three doorways.
+<BR CLEAR=RIGHT><IMG SRC="fortress2.gif" WIDTH=209 HEIGHT=230 BORDER=0
+	VSPACE=1 HSPACE=1 ALIGN=RIGHT USEMAP="#fortress2">
+&nbsp; Zem cast <I>Holy Aura</I> and stepped experimentally upon the cleared
+path, making it halfway across the room before the W.O.S.M.U. suddenly swarmed
+together and fell inwards to crush him. Zem could feel the life being squeezed
+from his body, as it would have had he not used a Fate point to reroll the
+&quot;E&quot; critical he sustained. Even so he was pinned and unable to move.
+Mystical quickly cast <I>Telekineses True,</I> a powerful version of the spell
+with the strength to pull Zem free. The <I>Holy Aura</I> caused the W.O.S.M.U.
+to break apart into smaller pieces, but did not weaken it in the slightest.
+Mystical managed to pull Zem back to the relative safety of the hallway.
+
+<P><A NAME="lab"><U>Rosvenir</U></A>
+<BR>&nbsp; The W.O.S.M.U. seemed limited to ground level, so I cast <I>Fly</I>
+to float out into the room. The mass quivered and writhed beneath my feet, but
+the bones and limbs couldn't find an arrangement stable enough to reach me. I
+flew across the W.O.S.M.U. and through the closest doorway.
+<BR>&nbsp; The first room I explored contained a number of stone benches with
+wooden shelves lining the walls. All were absolutely packed to capacity with
+boxes and bottles and containers of all sorts of magical components and
+materials. There were liquids, solids, and gasses, some which glow and others
+which repel the light. Some contained specimens which moved as though still
+alive, while others floated eerily in preservative liquids. <I>[Editor's note:
+this is room A on the inset map.]</I>
+<BR>&nbsp; The second and larger room was like a dream come true. It was
+completely filled with crystalline bookshelves, packed tight with barely
+enough room to slide between. The tomes resting on these shelves covered a
+vast array of topics from the sublime to the grotesque. Most were shod in
+metal, some rusted and some shiny, and labelled in a variety of tongues. The
+shelves glowed softly, providing the perfect light by which to read. Curse
+the luck which removed the halfling and his bag of holding at precisely the
+wrong time, or the entire collection might already be preserved. <I>[Editor's
+note: this is room B on the inset map.]</I>
+<BR>&nbsp; The final room was a laboratory of some sort, dominated by a
+roughly man sized black metallic capsule in the center. The capsule canted at
+a 45 degree angle to the floor, and its top nearly touched a huge black
+crystal set in the ceiling directly above. The walls of the room were covered
+in vellum sheets densely inscribed with humanoid anatomical illustrations.
+Other pages contained images of concentric spheres in various colors, which
+resembled planar diagrams. I noted that the innermost sphere was always pitch
+black. This will bear further study, I suspect, when we return to the Prime.
+<I>[Editor's note: this is room C on the inset map.]</I>
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Rosvenir flew back across the W.O.S.M.U. to rejoin the group. Haer
+Gronagin had not been seen since the previous day, and Kahlen (who had known
+him for over twenty years) insisted that a search be mounted. Rosvenir's
+<I>Finding</I> spell could not locate the halfling, and a repeat search of the
+area turned up no clues. Returning to the archway found it filled once again
+with mist, the stones softly glowing. Mystical touched the stones, clearing
+the arch and showing an image of the black tiled room at the other end.
+Rosvenir and Mystical elected to go through. The floor of the black tiled room
+looked strange, so the two went through with active <I>Fly</I> spells. The
+floor was gone, exposing the oily blackness beyond. The arch though which they
+had passed was filled from mist from the far side. Rosvenir touched the stones
+to clear it, ensuring that they could return later.
+
+<A NAME="haer"></A><BR CLEAR=RIGHT><IMG SRC="haer.gif" WIDTH=134 HEIGHT=103
+	BORDER=0 VSPACE=1 HSPACE=2 ALIGN=LEFT USEMAP="#haer">
+&nbsp; Once through the gate Rosvenir cast <I>Finding</I> to locate the
+halfling. The spell placed Haer at approximately the location where the <A
+HREF="../h15/index.html#gargoyle">stone gargoyle</A> had stood. Rosvenir's
+<I>Presence</I> spell found seven sentient beings, which was odd in that there
+had not been that many when they left this area the previous day. The two
+adventurers crept down the tunnel to the trap door. Propping it open slightly,
+they called out to Haer but received no response. Mystical cast <I>Intangible
+Form,</I> and Rosvenir flung the trap door open. Attracted by the noise, a
+Vrock demon had positioned itself immediately above the door. When Rosvenir's
+head obligingly popped up the demon played Whack A Mage. Rosvenir fell back
+into the tunnel as Mystical cast <I>Rapid Gravity Shifts</I> to fling the
+demon away.
+
+<P><CENTER>
+Prev: <A HREF="../h15/index.html">D. T. P.</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h17/index.html">One Final Can of Whoop-Ass</A>
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 5,000
+<LI>Mystical 5,250
+<LI>Endira 5,000
+<LI>Rosvenir 5,000
+<LI>Kurik 5,000
+<LI>Zem 5,750
+<LI>Meilu 5,000
+<LI>Fineas 5,750
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

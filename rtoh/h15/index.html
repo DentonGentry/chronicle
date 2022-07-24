@@ -1,0 +1,530 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #15">
+   <META NAME="generator" CONTENT="BBEdit 6.1">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>D. T. P.</TITLE>
+
+   <MAP NAME="fortress">
+	<AREA NAME="lamp" SHAPE="RECT" COORDS="137,278,142,283"
+		HREF="javascript:alert('A rusted lamppost radiating green light.');"
+		onMouseOver="self.status='Rusted lamp radiating green light'; return true"
+		ALT="Lamp">
+	<AREA NAME="Door" SHAPE="RECT" COORDS="140,249,148,258"
+		HREF="javascript:alert('Door marked Fortress of Conclusion.');"
+		onMouseOver="self.status='Fortress of Conclusion'; return true"
+		ALT="Door">
+	<AREA NAME="tongue" SHAPE="RECT" COORDS="135,254,153,290"
+		HREF="javascript:alert('The tongue of the Fortress, upon which Snuggles landed.');"
+		onMouseOver="self.status='Tongue of the Fortress'; return true"
+		ALT="Tongue">
+
+	<AREA NAME="Stucco" SHAPE="RECT" COORDS="117,200,171,245"
+		HREF="javascript:alert('Plastered room painted with many frescoes, including the trapped Fineas.');"
+		onMouseOver="self.status='Frescoed room, Fineas trapped.'; return true"
+		ALT="Fineas trapped">
+	<AREA NAME="Desatysso" SHAPE="RECT" COORDS="135,155,171,191"
+		HREF="javascript:alert('A small room, where the becursed Desatysso hangs from a hook in the ceiling.');"
+		onMouseOver="self.status='Becursed Desatysso hangs from a hook in the ceiling'; return true"
+		ALT="Desatysso">
+	<AREA NAME="Elemental" SHAPE="RECT" COORDS="265,176,278,189"
+		HREF="javascript:alert('At the end of a dark hallway stands the embodiment of entropic destruction from the Negative Material Plane.');"
+		onMouseOver="self.status='Race: Elemental, Level: 50, Profession: Butt-kicking'; return true"
+		ALT="A Whole Can of Whoop-Ass">
+
+	<AREA NAME="Lever" SHAPE="RECT" COORDS="70,187,74,194"
+		HREF="javascript:alert('A secret door opens when the Push Me sign is pushed. A wooden lever triggers a trap.');"
+		onMouseOver="self.status='Secret door behind Push Me sign'; return true"
+		ALT="Push Me">
+	<AREA NAME="Bones" SHAPE="RECT" COORDS="36,92,72,200"
+		HREF="javascript:alert('A deep pit filled with 150,000 undead bones, twitching. A catwalk is suspended above them.');"
+		onMouseOver="self.status='Pit filled with undead bones'; return true"
+		ALT="Dem Bones">
+	<AREA NAME="Unstone" SHAPE="CIRCLE" COORDS="100,70,3"
+		HREF="javascript:alert('A hole in the floor leading to the crawlspace below. This was a recent addition by Fineas, using Unstone.');"
+		onMouseOver="self.status='Hole leading to crawlspace'; return true"
+		ALT="Hole">
+	<AREA NAME="Crawlspace" SHAPE="POLY" COORDS="180,93,180,64,27,64,27,74,171,74,171,86"
+		HREF="javascript:alert('A low crawlspace runs five feet undeerneath the main level. Probably some sort of Dungeon maintenance tube.');"
+		onMouseOver="self.status='Crawlspace under main hall'; return true"
+		ALT="Jeffries tube">
+
+	<AREA NAME="nalfeshnee" SHAPE="RECT" COORDS="97,25,101,32"
+		HREF="javascript:alert('An incredibly lifelike painting of a Nalfeshnee demon conceals a secret door.');"
+		onMouseOver="self.status='Painting of Nalfeshnee demon'; return true"
+		ALT="Nalfeshnee">
+	<AREA NAME="vrock" SHAPE="RECT" COORDS="115,25,119,32"
+		HREF="javascript:alert('An incredibly lifelike painting of a Vrock demon conceals a secret door.');"
+		onMouseOver="self.status='Painting of Vrock demon'; return true"
+		ALT="Vrock">
+	<AREA NAME="marilith" SHAPE="RECT" COORDS="142,25,146,32"
+		HREF="javascript:alert('An incredibly lifelike painting of a Marilith demon conceals a secret door.');"
+		onMouseOver="self.status='Painting of Marilith demon'; return true"
+		ALT="Marilith">
+	<AREA NAME="molydeus" SHAPE="RECT" COORDS="169,25,173,32"
+		HREF="javascript:alert('An incredibly lifelike painting of a Molydeus demon conceals a secret door.');"
+		onMouseOver="self.status='Painting of Molydeus demon'; return true"
+		ALT="Molydeus">
+	<AREA NAME="Paintings" SHAPE="RECT" COORDS="90,29,180,56"
+		HREF="javascript:alert('A long room with four lifelike paintings of demons.');"
+		onMouseOver="self.status='Four lifelike paintings of demons'; return true"
+		ALT="Demon Paintings">
+	<AREA NAME="door1" SHAPE="RECT" COORDS="95,0,103,4"
+		HREF="javascript:alert('A 20 foot secret hallway ends with a blue glowing door with a pullring.');"
+		onMouseOver="self.status='Blue glowing door w/ pullring'; return true"
+		ALT="Blue Door">
+	<AREA NAME="door2" SHAPE="RECT" COORDS="113,0,121,4"
+		HREF="javascript:alert('A 20 foot secret hallway ends with a red glowing door with a pullring.');"
+		onMouseOver="self.status='Red glowing door w/ pullring'; return true"
+		ALT="Red Door">
+	<AREA NAME="door3" SHAPE="RECT" COORDS="140,0,148,4"
+		HREF="javascript:alert('A 20 foot secret hallway ends with a severely warped door, as if by water. There is no pullring.');"
+		onMouseOver="self.status='Door warped by water'; return true"
+		ALT="Water warped">
+	<AREA NAME="door4" SHAPE="RECT" COORDS="167,9,175,13"
+		HREF="javascript:alert('A 10 foot secret hallway ends in a wooden doorway carving with nonsensical runes.');"
+		onMouseOver="self.status='Door carved with runes'; return true"
+		ALT="Runed door">
+
+	<AREA NAME="Mist" SHAPE="CIRCLE" COORDS="159,115,32"
+		HREF="javascript:alert('A spherical chamber filled with silvery mist with ebony stripes. It is painful to the touch.');"
+		onMouseOver="self.status='Spherical chamber of painful silvery mist'; return true"
+		ALT="Silvery mist">
+	<AREA NAME="Glabrezu" SHAPE="RECT" COORDS="188,128,198,146"
+		HREF="javascript:alert('The Lair of a Glabrezu demon which guards the silvery mist.');"
+		onMouseOver="self.status='Lair of a Glabrezu demon'; return true"
+		ALT="Glabrezu demon">
+	<AREA NAME="Tunnel" SHAPE="POLY" COORDS="198,137,207,137,207,60,216,60,216,146,198,146"
+		HREF="javascript:alert('Tunnel leads from secret door buried under the crap.');"
+		onMouseOver="self.status='Tunnel from secret door'; return true"
+		ALT="Secret Tunnel">
+	<AREA NAME="Adventurers" SHAPE="RECT" COORDS="161,4,216,60"
+		HREF="javascript:alert('A group of twelve dead adventurers, now reanimated as undead.');"
+		onMouseOver="self.status='Twelve Undead Adventurers'; return true"
+		ALT="Undead Adventurers">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,281,292"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+
+   <MAP NAME="blacktile">
+	<AREA NAME="Lever" SHAPE="RECT" COORDS="130,241,135,248"
+		HREF="javascript:alert('A secret door opens when the Push Me sign is pushed. A wooden lever triggers a trap.');"
+		onMouseOver="self.status='Secret door behind Push Me sign'; return true"
+		ALT="Push Me">
+	<AREA NAME="Bones" SHAPE="RECT" COORDS="96,146,132,254"
+		HREF="javascript:alert('A deep pit filled with 150,000 undead bones, twitching. A catwalk is suspended above them.');"
+		onMouseOver="self.status='Pit filled with undead bones'; return true"
+		ALT="Dem Bones">
+	<AREA NAME="GreenTile" SHAPE="RECT" COORDS="96,83,133,146"
+		HREF="javascript:alert('A long room tiled with green stone. Each tile is inscribed with a letter or number.');"
+		onMouseOver="self.status='Green tiled room with letters and numbers inscribed.'; return true"
+		ALT="Green Tiled room">
+	<AREA NAME="Crawlspace" SHAPE="RECT" COORDS="87,118,144,128"
+		HREF="javascript:alert('A low crawlspace runs five feet underneath the main level. Probably some sort of Dungeon maintenance tube.');"
+		onMouseOver="self.status='Crawlspace under main hall'; return true"
+		ALT="Jeffries tube">
+
+	<AREA NAME="Trap" SHAPE="RECT" COORDS="74,210,82,213"
+		HREF="javascript:alert('A false door conceals a trap.');"
+		onMouseOver="self.status='Trapped false door.'; return true"
+		ALT="Trap">
+	<AREA NAME="StoneMage" SHAPE="CIRCLE" COORDS="14,137,4"
+		HREF="javascript:alert('A detailed statue of a human mage. Presumably an adventurer turned to stone.');"
+		onMouseOver="self.status='Petrified adventurer.'; return true"
+		ALT="Stoned mage">
+	<AREA NAME="Pillars" SHAPE="POLY" COORDS="19,104,54,104,54,170,19,170,19,151,14,151,8,146,8,129,14,123,19,123,19,104"
+		HREF="javascript:alert('A chamber lit by braziers of burning embers, with four low stone columns. Believed to be the lair of a gorgon.');"
+		onMouseOver="self.status='Medusa Lair.'; return true"
+		ALT="Medusa">
+
+	<AREA NAME="Gargoyle" SHAPE="RECT" COORDS="23,70,32,79"
+		HREF="javascript:alert('A stone gargoyle wearing a leather collar.');"
+		onMouseOver="self.status='Stone gagoyle with leather collar.'; return true"
+		ALT="Stone Gargoyle">
+
+	<AREA NAME="Archway" SHAPE="RECT" COORDS="106,42,122,46"
+		HREF="javascript:alert('An archway filled with Orange mist. The stones glow softly upon the parties entrance.');"
+		onMouseOver="self.status='Archway with orange mist.'; return true"
+		ALT="Archway">
+	<AREA NAME="Tunnel" SHAPE="POLY" COORDS="22,4,82,4,82,44,95,52,72,52,72,15,22,15"
+		HREF="javascript:alert('A concealed door in the floor reveals a tunnel to a black tiled room.');"
+		onMouseOver="self.status='Tunnel to black tiled room.'; return true"
+		ALT="Tunnel">
+	<AREA NAME="BlackTile" SHAPE="RECT" COORDS="95,44,133,82"
+		HREF="javascript:alert('A room tiled with one foot black stone tiles. There is an archway in one wall.');"
+		onMouseOver="self.status='Black tiled room.'; return true"
+		ALT="Black tiled room">
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,146,256"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Fortress of Conclusion">
+   </MAP>
+
+<SCRIPT LANGUAGE="Javascript">
+<!-- Apples magic scripting to detect QuickTime
+	var haveqt = false;
+	var agent = navigator.userAgent.toLowerCase();
+	
+	var ismacintosh = false;
+	if (agent.indexOf("macintosh") != -1) {
+		ismacintosh = true;
+	}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript">
+<!-- 
+	On Error Resume Next
+	Set theObject = CreateObject("QuickTimeCheckObject.QuickTimeCheck.1")
+	On Error goto 0
+
+	If IsObject(theObject) Then
+		If theObject.IsQuickTimeAvailable(0) Then 'Just check for file
+			haveqt = true
+		End If
+	End If
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="Javascript">
+<!-- 
+	if (navigator.plugins) {
+		for (i=0; i < navigator.plugins.length; i++ ) {
+			if (navigator.plugins[i].name.indexOf("QuickTime") >= 0)
+				{ haveqt = true; }
+		}
+	}
+//-->
+</SCRIPT>
+                             
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<H2>Chapter 15: D. T. P.</H2>
+<H4>&quot;We need flour, and we need another ring.&quot; -- Kurik</H4>
+
+&nbsp;<BR><IMG SRC="../fonts/F.gif" ALT="F" BORDER=0 HEIGHT=72 WIDTH=73
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+ineas felt something cold and sticky brush his leg. The invisible demon, its
+foul secretions darkening the coating of flour to a light brown, was beginning
+to stir. The demon moved stiffly and reacted slowly: it had spontaneously
+reanimated as a zombie due to the close proximity of the Negative Material
+Plane. Fineas hit it with a <I>Lightning Bolt</I> while Zem charged in with
+his broadsword. It slashed at Fineas with its claws and pincers, knocking him
+to the floor with serious wounds. Sensing trouble, Rosvenir and Mystical
+teleported back from the demon's lair to counter the renewed threat.
+
+<BR CLEAR=LEFT>&nbsp;<BR>
+<U>Transcript of the proceedings of the Infernal Revenue Service collection board</U>
+<TABLE COLUMNS="2" CELLSPACING="0">
+<TR><TD><B>Tax deadbeat:</B></TD><TD>Unnamed Glabrezu demon</TD></TR>
+<TR><TD><B>IRS counsel:</B></TD><TD>Xanlithe, Malfeshnee demon</TD></TR>
+<TR><TD>&nbsp;</TD><TD>&nbsp;</TD></TR>
+<TR><TD VALIGN=TOP><B>Unnamed Demon:</B></TD>
+	<TD>So ya sees, I wus heres in da Abyss and da Negatives Matervical
+	Plane animated my body. So Acerak says he don't owes me nothin for
+	da combat, onna counta I wudn't da one doin da fightin.</TD></TR>
+<TR><TD VALIGN=TOP><B>IRS counsel:</B></TD>
+	<TD>Under the regular tax code, said combat does not contribute to your
+	taxable income. However, it is taxable under the AMT.</TD></TR>
+<TR><TD VALIGN=TOP><B>Unnamed Demon:</B></TD>
+	<TD>Da whozit?</TD></TR>
+<TR><TD VALIGN=TOP><B>IRS counsel:</B></TD>
+	<TD>The Alternative Monstrous Tax, or AMT for short. Under the AMT
+	rules, the two 'C' criticals your body inflicted on the elven mage
+	each incur a minimum tax of 2,000 gold pieces. The 'A' critical also
+	inflicted by your Undead body incurs a tax of 200 gold pieces. Its a
+	progressive scale you understand, so only demons capable of inflicting
+	the more severe criticals pay the higher rates.</TD></TR>
+<TR><TD VALIGN=TOP><B>Unnamed Demon:</B></TD>
+	<TD>But, I don't get no money for dat. Acerak ain't gonna pay me
+	nuttin!</TD></TR>
+<TR><TD VALIGN=TOP><B>IRS counsel:</B></TD>
+	<TD>That is not the problem of the Infernal Revenue Service. You can
+	complain to Orcus if you feel the AMT is unfair.</TD></TR>
+<TR><TD VALIGN=TOP><B>Unnamed Demon:</B></TD>
+	<TD>But, Orcus is dead!</TD></TR>
+<TR><TD VALIGN=TOP><B>IRS counsel:</B></TD>
+	<TD>That is also not the problem of the Infernal Revenue
+	Service.</TD></TR>
+</TABLE>
+
+<P><U><A NAME="ringinvis">The Narrator</A></U>
+<BR>&nbsp; Kurik's <I>Repel Undead</I> failed. Reinforced by the powerful
+negative energies of the Plane, it was all but immune to such spells. More
+mundane means would have to suffice. To that end Zem slashed at it and
+Rosvenir cast <I>Flash</I> to blind the creature. Kurik cast <I>Bladeturn
+III</I> on the prone Fineas to protect him from further attacks while the elf
+dragged himself away from the carnage. Mystical used <I>Hurling</I> to
+unbalance the demon while Meilu swept its legs from under it, toppling it
+backwards into the spherical chamber.
+<BR>&nbsp; Zem's <I>Gasvision</I> spell was still active, and he watched as
+the Undead Glabrezou righted itself and begin crawling up the spherical wall.
+Unfurling its wings, the demon gave a mighty flap to land on the rim of the
+chamber. It landed in the middle of the can of whoop-ass as Kurik hit with
+his battleaxe, Zem's <I>Death Strike</I> inflicted another critical of Slaying,
+and Meilu's sweep toppled it to the ground.
+<BR>&nbsp; The party chopped the zombie to pieces, none large enough to
+threaten them again. On one of its fingers Kurik discovered a ring. When
+removed, the body became fully visible. This was how the demon had remained
+unseen during the battle. Unfortunately the ring carried a curse of
+enslavement of some sort, and none dared put it on.
+<BR>&nbsp; Haer had remained in the demon's lair amongst the offal. He
+possessed no <I>Teleport</I> spell, and no-one had thought to cast it on
+him. During the battle he had continued the search for treasure, finding a
+green stone bust of an unidentified human and a small amount of loot before
+the rest of the party rejoined him.
+
+<P><U>Mystical</U>
+<IMG SRC="fortress.gif" ALIGN=RIGHT WIDTH=280 HEIGHT=291 HSPACE=3 VSPACE=2
+	BORDER=0 ALT="Fortress Map #1" USEMAP="#fortress">
+<BR>&nbsp; I held my nose while somebody else opened the trap door in the
+floor of the demons lair. We crept down the tunnel, the halfling checking
+for traps while the rest of us watched for ambush. It opened up into a
+square chamber, where there were twelve humanoid bodies. Their armor and
+equipment were that of an adventuring party.
+<BR>&nbsp; I knew they were undead. How could it be otherwise? Every
+damn thing in the place becomes Undead when it dies. I for one am
+getting really sick of fighting Undead. I guess everybody else is too,
+because Zem and Kurik cast <I>Holy Aura</I> and just stood there in the
+doorway until the closest six had spontaneously combusted. I cast
+<I>Telekineses</I> to drag the other six closer. Once all twelve had
+turned to dust we used <I>Telekineses</I> again to drag out any
+equipment still in good shape. There was a two handed sword which
+carried a minor enchantment, and some loot. <I>[Editor's note: the sword
+is +10]</I>
+<BR>&nbsp; We never did enter the room. It was just some sort of trap that
+killed a prior adventuring party. They probably <I>Gated</I> in anyway:
+serves them right for messing with forces of which they have no
+comprehension.
+
+<P>
+<IMG SRC="blacktile.gif" ALIGN=LEFT WIDTH=145 HEIGHT=255 HSPACE=4 VSPACE=2
+	BORDER=0 ALT="Fortress Map #2" USEMAP="#blacktile">
+<U>The Narrator</U>
+<BR>&nbsp; By this point the constant jabbering of the Dretch had grown
+quite annoying. Endira stopped her <I>Charming Song,</I> and Rosvenir
+instead cast <I>Voice of Dominion.</I> His first command was for the bloody
+creature to shut up. The party inexplicably began referring to the Dretch as
+the Demonic Telemetry Probe (D. T. P. for short).
+<BR>&nbsp; Meilu thoroughly checked the square room using
+<I>Stonesight,</I> finding no secret doors or other hidden chambers. The
+adventurers retraced their steps, teleported back through the silvery
+mist, and descended through the hole in the floor which Fineas had <A
+HREF="../h14/index.html#unstone">created</A>. This secret tunnel emerged
+into a hallway at a &quot;T&quot; intersection. To the left the hall
+ended in a false door concealing some sort of trap. To the right it ran
+some thirty feet and then turned left.
+<BR><A NAME="medusa">&nbsp;</A> Straight ahead the hallway ended in a door.
+Meilu examined the room beyond using <I>Stonesight.</I> It was a rectangular
+chamber with four low stone columns spaced evenly in the center. Braziers of
+coals cast a dim reddish light. In the far wall was an alcove holding a
+highly detailed statue of a robed human. The statue held one hand before
+its eyes, as if shielding from something. It very much resembled a human
+mage trying desperately not to look at a medusa.
+<BR>&nbsp; Seeing no reason to face the gorgon, the party turned right and
+followed the hallway around to the left. It opened into two parallel halls
+which met at the far end, where a third hall doubled back upon the first
+two. <I>[Editor's note: see the map inset]</I> Meilu's <I>Stonesight</I>
+found a tunnel leading from a concealed door in the floor of the
+intersection.
+<BR>&nbsp; At the end of the center hallway was a four armed stone
+gargoyle, looking very much like one found in the Tomb of Horrors. In
+front of the statue was a cracked clay pot, the whole coated with a thin
+layer of dust.
+
+<P><U>Kurik's report to the Church</U>
+<BR>&nbsp; I approached the stone gargoyle cautiously. It was almost
+identical to one we had encountered in the original tomb, which seems an
+eternity but was really only two weeks ago. There were a few differences,
+though. This statue wore a leather collar studded with four black stones
+about its neck, and was whole and undamaged unlike the one in the Tomb
+which had an arm broken off.
+<BR CLEAR=RIGHT><A NAME="gargoyle">&nbsp;</A> Fineas suspected that the
+gargoyle would at some point come to life and attack. He welded its feet to
+the floor using a <I>Merge Stone</I> spell. In the original Tomb we placed a
+gem in each of the remaining three hands, and as it crushed them the statue
+released a ring from a hidden compartment. I got four gems from Haer to place
+in the hands of the statue. Nothing happened. Haer then gave me four gems of
+real value to try, though these had no more effect. I can only imagine how the
+halfling would have reacted had they been crushed. Since the earlier gargoyle
+had given us a ring, I had Haer dust the statue with flour and then placed the
+ring of <I>Invisibility</I> on one of its hands. The statue faded from sight,
+but remained unmoving. We placed more magic rings on its other fingers, to no
+avail. I had to <I>Neutralize Curse</I> again to remove the ring from its
+finger.
+
+<BR CLEAR=LEFT>
+<PRE><BR><U>Early draft of the RTOH Screenplay</U>
+436 INT -- HALLWAY IN FORTRESS OF CONCLUSION -- INDETERMINATE TIME
+  A stony guardian stoicly defends a clay pot at the end of the hall. The
+  torchlight casts stark shadows across its face. [[Note to director: turn
+  those damn arc lights down for this shot!!]]
+
+  Pull back to see the little demon creeping toward the stone gargoyle.
+  [[Casting: try to get Gilbert Gottfried, or somebody else with no pride.]]
+  The demon climbs up to its chest, and nervously unbuckles the leather collar.
+  As soon as the collar is loose the gargoyle springs to life, throttling the
+  demon.
+
+       Dretch:
+  Argh! Gggack! Phptt!
+
+  [[Note: we haven't given the Dretch any actual lines, so it doesn't qualify
+  for speaking part residuals.]]
+
+  Mystical is prepared, and teleports the demonling to safety.
+
+  [[Run the script by Sarah Michelle Gellar for the part of Mystical. She's into
+  the whole demon/undead slaying thing, she might go for it.]]
+</PRE>
+
+<SCRIPT LANGUAGE="Javascript">
+<!-- 
+if (haveqt) {
+	document.write(unescape("%3c"));
+	document.write('EMBED WIDTH="480" HEIGHT="376" SRC="gargoyle.mov" ');
+	document.write('NAME="Gargoyle" VSPACE=3 ALT="Gargoyle" ');
+	document.write('LOOP="FALSE" CACHE="TRUE" TYPE="video/quicktime" ');
+	document.write('CONTROLLER="TRUE" AUTOPLAY="FALSE" BORDER=0');
+	if (ismacintosh) {
+		document.write('PLAYEVERYFRAME="TRUE" ');
+	}
+	document.write('PLUGINSPAGE="http://www.apple.com/quicktime/download/" ');
+	document.writeln(unescape("%3e") );
+} else {
+	document.write(unescape("%3c"));
+	document.write('IMG WIDTH="480" HEIGHT="360" SRC="gargoyle.jpg" ');
+	document.write('NAME="Gargoyle" VSPACE=3 ALT="Gargoyle" ');
+	document.writeln(unescape("%3e") );
+}
+//-->
+</SCRIPT>
+
+<NOSCRIPT>
+	<IMG WIDTH="480" HEIGHT="360" SRC="gargoyle.jpg" NAME="Gargoyle"
+		VSPACE=3 ALT="Gargoyle">
+</NOSCRIPT>
+
+<P><U>The Narrator</U>
+<BR>&nbsp; The Dretch managed to fling the leather collar behind the
+flailing gargoyle, where it could be retrieved using <I>Telekineses.</I>
+Haer discovered a hidden compartment in one of the black stones, in which
+was a slip of paper. It read, &quot;Ahead the lines of access squarely meet,
+the path to glory is at your feet. --A.&quot; This presumably referred to the
+tunnel under the floor which Meilu had seen. Behind them the awakened
+gargoyle continued to claw ineffectually at the air, and seemed quite
+perturbed that it couldn't free its feet. Fineas cast <I>Unstone,</I>
+turning it instantly to dust.
+<BR>&nbsp; <A NAME="blacktile">Cautiously</A> the trap door was opened, and
+the party followed a wide tunnel through several turns to emerge in a large
+chamber tiled with one foot square black stones. There was an archway in one
+wall, filled with a rolling orange haze. Similar to those in the original
+Tomb, there were distinctive stones at the base of each side of the arch and
+a third at the top. The stone on the left side of the archway was of jade, on
+the right a pearlescent hue, while the stone on top was colored hazel. All
+three stones began to glow softly as the party entered.
+<BR>&nbsp; In the original Tomb, such stones had to be pushed in a
+particular order to successfully traverse an archway. Having no idea of the
+proper order, the party determined to make camp for the night and use magic
+to learn the way. Meilu swept the area with <I>Stonesight.</I> The
+wall opposite the archway bordered a large room tiled with green stone, each
+bearing a letter or number. This green room was immediately beyond the
+massive pit of Undead bones which the party had managed to avoid. Rosvenir
+cast <I>Commune True</I> to learn the order to push the stones. The
+answer was surprising: &quot;Order is irrelevant.&quot;
+<P>&nbsp; Rosvenir cast <I>Dream IV</I> to know of four things:
+
+<UL>
+	<LI>To where does the archway lead?
+	<LI>How do we get through the archway safely?
+	<LI>Does the room with the <A HREF="#medusa">statue</A> have anything
+		we need to complete our quest?
+	<LI>Does the room of green tiles have anything we need to complete
+		our quest?
+</UL>
+
+<P><U>Rosvenir's Dream</U>
+<BR><I>Standing in a room with black tiles... Walk through the archway... It
+diverges into two paths... In the first path, the three stones around the
+arch are not glowing... This path leads to a brilliant blue light... The
+stones are glowing at the beginning of the second path... This path diverges
+again, with one branch leading to the green tiled room and the other to the
+room with the statue... Both rooms are completely empty...</I>
+
+<P><U>Day 30</U>
+<BR>&nbsp; When Desatysso was released from his life of pain, his <A
+HREF="../h14/index.html#zemcurse">curse</A> had transferred to Zem. Kurik
+had neutralized the curse, but only for 22 hours. He had attempted to extend
+the neutralization when the party made camp, but failed. Zem
+lay now on the ground, his limbs bound tightly to his sides and his eyes and
+mouth sewn closed. Kurik said a brief litany to Pandeos and attempted to
+<I>Neutralize Curse</I> again, this time a more powerful spell which would
+hold it at bay for weeks. It took three tries, but finally the spell took and
+Zem was free.
+<BR>&nbsp; The <I>Dream</I> indicated that the stones must be extinguished
+before traversing the archway. Haer experimentally pushed the jade stone,
+finding that it slid slightly inwards and then ceased to glow. He pushed the
+pearl on the other side, and Rosvenir the top hazel stone. When all three
+had been pushed the orange mist dissipated, leaving only a slight distortion
+in the air where it had been. The room beyond was tiled with blue stones,
+and held another arch in the far wall. This far arch appeared totally
+mundane, with no mists or glowing stones.
+<BR><A NAME="odie">&nbsp;</A> Rosvenir sent the Demonic Telemetry Probe
+through the portal. The Dretch hesitated, then stepped through. A moment later
+it appeared in the blue room, indicating that there is some sort of magical
+transport involved. Suddenly something snatched the Dretch and dragged it out
+of the field of view. Moments later the decapitated head of the poor demonling
+bounced across the floor and came to rest staring at the adventurers, a pool
+of greenish blood slowly forming beneath it. A few minutes later the
+reanimated body of the Dretch shambled over, feeling about until finding its
+head, and crookedly reattached it. The zombie Dretch staggered out of view.
+
+<P><CENTER>
+Prev: <A HREF="../h14/index.html">Desatysso, I Presume?</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h16/index.html">Pressed Demon Under Glass</A>
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 6,000
+<LI>Mystical 6,250
+<LI>Endira 6,000
+<LI>Rosvenir 6,750
+<LI>Kurik 6,000
+<LI>Zem 6,000
+<LI>Meilu 6,250
+<LI>Fineas 6,500
+</UL>
+
+Want to know how the <A HREF="pov.html">animation</A> was created?
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

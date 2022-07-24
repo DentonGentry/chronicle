@@ -1,0 +1,321 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #13">
+   <META NAME="generator" CONTENT="BBEdit 5.1.1">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>Zombie Foie Gras, Served Cold</TITLE>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<MAP NAME="tower15">
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="112,112,18"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of tower'; return true"
+		ALT="Central Core">
+
+	<AREA NAME="Enemy" SHAPE="RECT" COORDS="116,42,125,51"
+		HREF="javascript:alert('An enemy, type unknown.');"
+		onMouseOver="self.status='An enemy'; return true"
+		ALT="Enemy">
+
+	<AREA NAME="Bridge" SHAPE="RECT" COORDS="223,102,233,120"
+		HREF="javascript:alert('The bridge to an emtpy tower, which crumbled as the party walked across it.');"
+		onMouseOver="self.status='Bridge to empty tower.'; return true"
+		ALT="Bridge">
+
+	<AREA NAME="Cabinet" SHAPE="RECT" COORDS="113,26,116,32"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+	<AREA NAME="Cabinet" SHAPE="POLY" COORDS="159,14,162,11,167,15,165,18"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+	<AREA NAME="Cabinet" SHAPE="POLY" COORDS="199,43,204,48,202,50,197,45"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+	<AREA NAME="Cabinet" SHAPE="POLY" COORDS="217,90,221,90,222,96,218,96"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+	<AREA NAME="Cabinet" SHAPE="RECT" COORDS="185,98,192,102"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+	<AREA NAME="Cabinet" SHAPE="POLY" COORDS="145,69,148,67,153,71,149,74"
+		HREF="javascript:alert('A cabinet labelled Dreaming Stores.');"
+		onMouseOver="self.status='Dreaming Stores'; return true"
+		ALT="Dreaming Stores">
+
+	<AREA NAME="Barracks" SHAPE="POLY" COORDS="113,0,167,14,208,54,223,102,165,102,150,74,113,58"
+		HREF="javascript:alert('A former barracks, beds lining the wall.');"
+		onMouseOver="self.status='Former Barracks'; return true"
+		ALT="Barracks">
+	<AREA NAME="Lucidaphen" SHAPE="POLY" COORDS="113,143,134,133,191,190,158,213,113,223"
+		HREF="javascript:alert('The Lucidaphen Stores, metal cabinets toppled and white powder spilled everywhere.');"
+		onMouseOver="self.status='Lucidaphen Stores with spilled powder.'; return true"
+		ALT="Lucidaphen Stores">
+
+	<AREA NAME="collapsed" SHAPE="POLY" COORDS="113,0,113,223,48,204,14,171,0,112,17,51,59,12"
+		HREF="javascript:alert('The floor in this room collapsed, revealing a platform holding the Sands of Time.');"
+		onMouseOver="self.status='Collapsed room to Sands of Time.'; return true"
+		ALT="Sands of Time">
+
+	<AREA NAME="empty" SHAPE="CIRCLE" COORDS="112,112,111"
+		HREF="javascript:alert('The rest of the tower was empty.');"
+		onMouseOver="self.status='The rest of the tower was empty'; return true"
+		ALT="Empty">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,237,224"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #15">
+</MAP>
+
+<MAP NAME="tower16">
+	<AREA NAME="Stairs" SHAPE="RECT" COORDS="0,216,18,230"
+		HREF="javascript:alert('The end of the stairs leading down from the bridge.');"
+		onMouseOver="self.status='Stairs from bridge'; return true"
+		ALT="Stairs">
+	<AREA NAME="Platform" SHAPE="RECT" COORDS="18,216,72,243"
+		HREF="javascript:alert('Platform above the mists, flanked by statues.');"
+		onMouseOver="self.status='Platform above the mists'; return true"
+		ALT="Platform">
+
+	<AREA NAME="Platform" SHAPE="RECT" COORDS="41,50,49,54"
+		HREF="javascript:alert('Four foot hole in wall, surrounded by carved snakes.');"
+		onMouseOver="self.status='Hole surrounded by snakes'; return true"
+		ALT="Slide entrance">
+	<AREA NAME="Hallway" SHAPE="RECT" COORDS="38,52,56,216"
+		HREF="javascript:alert('Long hallway lined with frozen undead.');"
+		onMouseOver="self.status='Hallway lined with frozen undead'; return true"
+		ALT="Hallway">
+	<AREA NAME="Enemy1" SHAPE="RECT" COORDS="60,56,69,146"
+		HREF="javascript:alert('Undead frozen into the structure of the tower, screaming. Their aura is harmful.');"
+		onMouseOver="self.status='Frozen Undead'; return true"
+		ALT="Frozen Undead">
+	<AREA NAME="Enemy2" SHAPE="RECT" COORDS="24,56,33,146"
+		HREF="javascript:alert('Undead frozen into the structure of the tower, screaming. Their aura is harmful.');"
+		onMouseOver="self.status='Frozen Undead'; return true"
+		ALT="Frozen Undead">
+
+
+	<AREA NAME="Enemy3" SHAPE="RECT" COORDS="139,59,148,68"
+		HREF="javascript:alert('A Winter Wight, quickly dispatched.');"
+		onMouseOver="self.status='Winter Wight'; return true"
+		ALT="Winter Wight">
+	<AREA NAME="Phantom" SHAPE="POLY" COORDS="151,181,143,189,142,195,154,201,161,201,167,191,167,187,162,181"
+		HREF="javascript:alert('The Phantom of the Void, squished into a room two sizes too small.');"
+		onMouseOver="self.status='The Phantom of the Void'; return true"
+		ALT="Phantom of the Void">
+	<AREA NAME="MistRoom" SHAPE="RECT" COORDS="110,52,200,184"
+		HREF="javascript:alert('A huge chamber, open to the mists below Moil.');"
+		onMouseOver="self.status='Chamber of mists'; return true"
+		ALT="Chamber of Mists">
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,217,244"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #16">
+</MAP>
+
+<H2>Chapter 13: Zombie Foie Gras, Served Cold</H2>
+<H4>&quot;The magic's so bright, I've got to wear shades.&quot; -- Kurik</H4>
+
+<IMG SRC="../fonts/F.gif" ALT="F" BORDER=0 HEIGHT=72 WIDTH=73
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+ully recovered from the running battle with the Darkweaver, the party took
+stock of their situation. Two of the problems three called out in <A
+HREF="../h7/index.html#poem">Acerak's poem</A> had been successfully
+completed. The third remaining was to face the Vestige which guards the
+Sands of Time. Rosvenir's <A HREF="../h12/index.html#dream">dream</A> had
+revealed the Vestige to be the creature of
+<A HREF="../h11/index.html">mist</A> which the party had faced once already,
+and an earlier <A HREF="../h10/index.html#dream">dream</A> had revealed its
+location. The group travelled through the
+<A HREF="../h9/index.html#dragon">tower</A> of the Brine Dragon, on through
+the <A HREF="../h8/index.html">Tower</A> of Portals, past
+the <A HREF="../h9/index.html">Tower</A> of Chance,
+and finally across the bridge to the Tower which held the Sands of Time.
+<BR>
+<IMG SRC="tower15.gif" ALT="Tower #15" BORDER=0 HEIGHT=224 WIDTH=237
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower15">
+
+&nbsp; The stone bridge began to collapse underneath as they walked. As
+everyone possessed some sort of <I>Fly</I> spell or item, this was scarcely
+a problem and the party continued across to the tower. The structure was
+made of grey stone and metal, with an entrance fully twenty feet across. A
+crescent moon of silver was inlaid into the lintel, with flecks of gems for
+stars. A long hallway met the entrance, with doors flanking either side.
+Kurik's <I>Detect Enemies</I> spell found one, beyond the first door on the
+right side of the hall.
+
+<P><A NAME="lucidaphen"><U>Rosvenir</U></A>
+<BR>&nbsp; The halfling checked for traps on the door to the right, and then
+opened it. Obviously the room had been a barracks, with beds lined up
+against the walls. In the farthest bed something lay sleeping, which
+registered to the Paladin's spell. No one approached close enough to disturb
+its slumber. Ten cabinets hugged the wall at intervals, marked with
+&quot;Dreaming Stores&quot; in the demonic Moilian language. I noted a
+similarity in the spelling of &quot;dream&quot; with that of an ancient
+Horadric tongue. I shall have to investigate this connection further when we
+return to the Prime Material Plane. Our normally dependable thief was unable
+to pick the lock on the first such cabinet, but making the door intangible
+was just as effective. Several of the vials nestle now in my pack, awaiting
+only the appropriate time for further study.
+<BR>&nbsp; Many of the remaining rooms were empty, though a copper plate on
+one door caught my attention. It read, &quot;Lucidaphen Stores.&quot; I
+<I>Merged</I> with the wall to get a look inside. What had once been
+freestanding cabinets lay now strewn across the floor, their contents spilled
+asunder. A fine white powder had issued forth from the lockers, and now
+coated much of the floor. On the far wall a 20 foot tall crescent moon was
+inlaid in silver with gemstones for stars, similar to the one over the tower
+entrance save for its great size.
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Not wanting to risk inadvertant inhaling of the substance,
+Rosvenir returned to the hallway. The remaining area of the tower was
+occupied by one enormous room. It was completely empty and uninteresting,
+save for the large hole blasted in the floor by some unknown force. Glancing
+over the edge of the hole showed a small irregular platform, attached to the
+central support column of the tower some thirty feet below. It was all that
+remained of a lower level, the rest having collapsed into the surging mists
+of Moil. Upon the platform sat a dais, and upon the dais sat an hourglass.
+<BR>&nbsp; Zem flew down to examine it closely. The dais was inlaid with a
+decorative design of red stone. The hourglass was attached to the stone by a
+metal cylinder, and was inscribed with red lettering in Common script,
+&quot;When the Sands run out, bring the glass about.&quot; Zem rejoined the
+party, and Mystical used <I>Telekineses</I> to flip the hourglass. There was
+an audible click, and the blue sand began to slowly drain from the top of
+the glass to the bottom. The party waited in great anticipation. And waited.
+And waited. And waited, while the sands slowly drained. Thoroughly bored,
+Endira wandered over to the window and happened to notice an insubstantial
+cloud slowly rising from the roiling mist below Moil. <I>[Editor's note: a
+natural 100 on Observation didn't hurt either.]</I>
+<BR>&nbsp; It appeared to be the same creature the party had <A
+HREF="../h11/index.html">faced</A> the previous day, the <A
+HREF="../h7/index.html#poem">Vestige</A> that guards the Sands of Time.
+Within a few minutes the strident murmurs could be mentally heard. Kurik
+cast <I>Courage True</I> to ward off the effects of the <I>Fear</I> the
+thing radiated, and Mystical used multiple <I>Walls of Ice</I> to seal the
+window in the room and the entry hallway of the tower and prevent its
+entrance. The group then hunkered down to wait. A pounding at the window
+commenced, though the enchanted ice showed no sign of weakening. After a few
+minutes the Vestige shifted its attention and began pounding at the ice
+blocking the tower entrance. Its efforts came to naught, and the sands of
+the hourglass ran out. Kurik flew down to flip it over again, as the
+inscription seemed to imply, and was rewarded with a much louder and more
+assertive &quot;click.&quot;
+<BR>&nbsp; The task accomplished, Mystical teleported the party back to
+their fortified room in the <A HREF="../h12/index.html#room">Tower of
+Health</A>, where she had previously cast <I>Store Location.</I>
+
+<P><U>Mystical</U>
+<BR>&nbsp; I cast another <I>Store Location</I> in the room with the
+hourglass, in case we had screwed up and had to go back. After teleporting
+to the Tower of Health we crept back through the tower of the <A
+HREF="../h9/index.html">Brine Dragon</A> and towards the one which held the
+Phantom of the Void. It was a square tower, not round, and made of some sort
+of black ice. There was no entrance at the foot of the bridge, just some
+stairs wrapped around the <U>outside</U> of the structure, leading both up
+and down. The stairs ended a short distance above, so we went down. We
+disturbed some sort of bat-like demon things halfway down the tower, scaring
+about a dozen of them out of a hole in the side. They tried to shove people
+off of the icy steps, which might have been bad except we could all
+<I>fly,</I> so instead it was almost comical. We dispatched them and moved
+on.
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Another half hour brought the party to the bottom of the stairs,
+to a platform only a few feet above the mists. There was a twenty foot
+square opening in the tower wall, with statues of jackal headed humans to either
+side and a large eye carved above. None radiated power nor showed
+up to Kurik's <I>Detect Enemies</I> spell, so they were ignored. The group
+entered the tower.
+<P><CENTER><A HREF="pov.html"><IMG SRC="ghoul.jpg"
+	ALT="Ghouls embedded in ice" WIDTH=640 HEIGHT=400
+	HSPACE=3 VSPACE=1 BORDER=0></A></CENTER>
+<BR><IMG SRC="tower16.gif" ALT="Tower #16" WIDTH=217 HEIGHT=244 BORDER=0
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower16">
+&nbsp;Inside was very dark, and even magic illumination was subdued. From
+the entrance led a long, straight hallway, which was cautiously explored. As
+they walked deeper into the tower the party began to hear strange, muffled
+noises. A short distance further revealed the source: there were undead
+frozen into the walls, floors, and ceiling, row upon row of them, screaming.
+The ice was too thick for them to break out, though their vile aura was still
+damaging to living creatures. Zem and Kurik cast <I>Holy Aura</I> to dish
+out some damage of their own, and the adventurers <I>flew</I> down the rest
+of the hallway. <I>[Editor's note: thus avoiding the trap in the middle,
+which would have dropped them into a pit lined with more of the undead
+things]</I>
+<BR>&nbsp; At the end of the hallway was a four foot hole in the wall,
+surrounded by stone carvings of writhing snakes. Rosvenir's <I>Presence</I>
+spell detected forty, approximately the number of snakes in the carving.
+Mystical created a cylindrical <I>Wall of Ice</I> sheathing the hole and
+blocking the snakes as one by one the party members <I>flew</I> through it,
+finally escaping the harmful aura of the undead in the hall.
+<BR>&nbsp; The tunnel sloped downward at a steep angle, terminating in a
+twenty foot square platform on one side of an enormous cavern in the ice.
+There was no floor in the rest of the chamber, exposing the roiling mists of
+Moil scant feet below. A Winter Wight stood to one side of the platform, and
+the black fire of its hands winked into being as it said, &quot;Guests! It
+has been so long. Let me be the first to welcome you to the Last
+Chasm.&quot; Kurik held it at bay until Mystical pushed it off the platform
+with <I>Telekineses,</I> plunging to its doom in the mists below.
+
+<P><A NAME="phantom">&nbsp;</A> On the far side of the chamber was another
+platform, in front of a cave carved crudely into the ice. Above the platform
+was an inscription: &quot;When the bars fall away the flyer stands revealed.
+It can bring you my way by the route once concealed.&quot; Fortunately no one
+suffered damage from Acerak's poetry critical. Crammed into a cave two sizes
+too small was an incredible creature: huge, with enormous wings and twin
+tentacles in place of a head. It was the Phantom of the Void.
+
+<BR CLEAR=RIGHT>
+
+<P><CENTER><A HREF="pov.html"><IMG SRC="phantom.jpg"
+	ALT="The Phantom of the Void" WIDTH=594 HEIGHT=337
+	HSPACE=3 VSPACE=1 BORDER=0></A></CENTER>
+
+<P><CENTER>
+Prev: <A HREF="../h12/index.html">Urban Renewal</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h14/index.html">Desatysso, I presume?</A>
+
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 10,000
+<LI>Mystical 10,500
+<LI>Endira 10,250
+<LI>Rosvenir 10,000
+<LI>Kurik 10,000
+<LI>Zem 10,000
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>

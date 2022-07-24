@@ -1,0 +1,440 @@
+<!doctype HTML public "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Denton Gentry">
+   <META NAME="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Description" CONTENT="Chapter #8">
+   <META NAME="generator" CONTENT="BBEdit 5.1">
+   <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+   <TITLE>The City That Waits</TITLE>
+</HEAD>
+<BODY BACKGROUND="../paper.gif" BGCOLOR="#CCCCCC">
+
+<MAP NAME="tower4">
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="109,109,14"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of the tower'; return true"
+		ALT="Central Core">
+	<AREA NAME="walkway" SHAPE="CIRCLE" COORDS="109,109,40"
+		HREF="javascript:alert('The central walkway surrounding the core.');"
+		onMouseOver="self.status='Central walkway'; return true"
+		ALT="Central walkway">
+
+	<AREA NAME="PortalA" SHAPE="CIRCLE" COORDS="171,72,18"
+		HREF="javascript:alert('An archway filled with silvery mist. To one side is a control panel with three palm shaped colored depressions. The blue control causes the words Tower of Health to appear above the archway. The black control, Hub. The red, Periphery.');"
+		onMouseOver="self.status='Tower of Health, Hub, and Periphery'; return true"
+		ALT="Portal #1">
+	<AREA NAME="PortalB" SHAPE="CIRCLE" COORDS="108,180,18"
+		HREF="javascript:alert('An archway filled with grey mist. To one side is a control panel with a single blue palm shaped depression. Activating it causes the word Kainrath to appear above the archway.');"
+		onMouseOver="self.status='Kainrath'; return true"
+		ALT="Portal #2">
+	<AREA NAME="PortalC" SHAPE="CIRCLE" COORDS="45,72,18"
+		HREF="javascript:alert('An archway filled with yellow mist. To one side is a control panel with a single yellow palm shaped depression. Activating it causes it the control to glow with a yellow light, but no words appear above the archway.');"
+		onMouseOver="self.status='Yellow mists'; return true"
+		ALT="Portal #3">
+
+	<AREA NAME="entrance1" SHAPE="POLY" COORDS="193,168,202,150,211,152,197,173"
+		HREF="javascript:alert('An open archway leads into the tower. Inscribed in demonic script above the arch is Tower of Portals.');"
+		onMouseOver="self.status='Entrance to Tower of Portals'; return true"
+		ALT="Entrance">
+	<AREA NAME="catwalk1" SHAPE="POLY" COORDS="146,119,207,153,195,171,137,136"
+		HREF="javascript:alert('Twin catwalks extend to the central walkway over the depths below.');"
+		onMouseOver="self.status='Twin catwalks over the depths'; return true"
+		ALT="Catwalk">
+	<AREA NAME="catwalk2" SHAPE="POLY" COORDS="9,153,68,120,79,136,20,171"
+		HREF="javascript:alert('Twin catwalks extend to the central walkway over the depths below.');"
+		onMouseOver="self.status='Twin catwalks over the depths'; return true"
+		ALT="Catwalk">
+
+	<AREA NAME="Pit" SHAPE="CIRCLE" COORDS="109,109,109"
+		HREF="javascript:alert('The tower is hollow, and extends downward at least 400 feet to the mists below.');"
+		onMouseOver="self.status='Hollow interior of tower'; return true"
+		ALT="Hollow Interior">
+
+	<!-- Default AREA tag covering the whole image. IE4 prints "(no link)"
+	     in the status bar when it encounters an area without an HREF.
+	     Once it prints "(no link)" it stops printing the status bar
+	     messages from the javascript in the AREA tags above. Browsers
+	     much search through the AREA tags and take the first match, so the
+	     tags above have precedence over this one. This one provides a
+	     default to keep IE4 happy. -->
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,218,218"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #2">
+</MAP>
+
+<MAP NAME="tower2">
+	<AREA NAME="enemy1" SHAPE="RECT" COORDS="110,66,119,75"
+		HREF="javascript:alert('The Detect Enemies spell located a target here.');"
+		onMouseOver="self.status='Detected Enemy'; return true"
+		ALT="Detected Enemy">
+	<AREA NAME="enemy2" SHAPE="RECT" COORDS="193,132,202,141"
+		HREF="javascript:alert('A zombie lay frozen under a thick layer of ice. Upon approach it broke free and attacked.');"
+		onMouseOver="self.status='Frozen zombie attacked the party'; return true"
+		ALT="Frozen Zombie">
+
+	<AREA NAME="bookshelf1" SHAPE="RECT" COORDS="117,160,123,193"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+	<AREA NAME="bookshelf2" SHAPE="POLY" COORDS="126,134,146,154,151,149,131,129"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+	<AREA NAME="bookshelf3" SHAPE="POLY" COORDS="167,148,195,165,200,159,173,142"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+	<AREA NAME="bookshelf4" SHAPE="POLY" COORDS="181,108,214,106,214,113,181,115"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+	<AREA NAME="bookshelf5" SHAPE="POLY" COORDS="179,90,209,80,211,88,181,97"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+	<AREA NAME="bookshelf6" SHAPE="POLY" COORDS="172,74,200,59,204,66,175,80"
+		HREF="javascript:alert('A bookshelf, completely empty of books.');"
+		onMouseOver="self.status='Empty bookshelf'; return true"
+		ALT="Empty bookshelf">
+
+	<AREA NAME="RoomZ" SHAPE="POLY" COORDS="90,131,98,136,108,137,108,201,74,195,44,177"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='This room is empty'; return true"
+		ALT="Empty Room">
+	<AREA NAME="RoomY" SHAPE="POLY" COORDS="131,90,136,99,136,116,131,126,151,146,166,115,166,100,160,82,152,69"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='This room is empty'; return true"
+		ALT="Empty Room">
+	<AREA NAME="RoomX" SHAPE="POLY" COORDS="169,36,147,22,114,14,87,16,61,26,36,47,61,72,78,57,100,49,115,49,143,61"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='This room is empty'; return true"
+		ALT="Empty Room">
+	<AREA NAME="RoomW" SHAPE="POLY" COORDS="61,72,49,100,49,115,61,144,92,113,91,102"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='This room is empty'; return true"
+		ALT="Empty Room">
+
+	<AREA NAME="RoomA" SHAPE="POLY" COORDS="26,38,9,65,0,108,49,108,52,88,61,72"
+		HREF="javascript:alert('A huge throne-like chair faces a large window looking out upon the City. The back of the chair is ornately carved with a sunrise pattern, and is completely encrusted in ice. The throne is enchanted with spells of healing.');"
+		onMouseOver="self.status='Room with Healing throne'; return true"
+		ALT="Healing Throne">
+	<AREA NAME="RoomB" SHAPE="POLY" COORDS="0,108,8,150,26,179,62,143,53,129,49,108"
+		HREF="javascript:alert('This room is empty.');"
+		onMouseOver="self.status='This room is empty'; return true"
+		ALT="Empty Room">
+	<AREA NAME="RoomD" SHAPE="POLY" COORDS="187,34,152,69,152,125,131,125,108,137,108,200,133,198,133,171,196,171,210,144,216,118,216,98,208,66"
+		HREF="javascript:alert('Once a fine library, the shelves are now completely bare. A zombie is frozen under a layer of ice on one side of the room. It broke free and attacked as the party approached.');"
+		onMouseOver="self.status='An empty library, with frozen zombie'; return true"
+		ALT="Library">
+	<AREA NAME="DDoors" SHAPE="POLY" COORDS="81,127,86,122,91,127,86,132"
+		HREF="javascript:alert('At the end of the icy hallway twin metal doors beckon, carved in a sunburst pattern. The doors are locked.');"
+		onMouseOver="self.status='Double doors carved with sunburst pattern'; return true"
+		ALT="Double Doors">
+	<AREA NAME="Hallway" SHAPE="POLY" COORDS="26,179,82,123,90,131,34,187"
+		HREF="javascript:alert('A long hallway is completely choked with icy stalagtites and stalagmites. Mystical melted a path with several Walls of Fire.');"
+		onMouseOver="self.status='A long hallway choked with ice'; return true"
+		ALT="Frozen Hallway">
+	<AREA NAME="Wand" SHAPE="POLY" COORDS="82,123,91,114,99,122,90,131"
+		HREF="javascript:alert('The walls of this small room are heavily encrusted with ice. The center of the room is completely free of ice, where a wooden wand sits atop a heavy gold pedestal. It is the Wand of Days.');"
+		onMouseOver="self.status='Small frozen room holds a pedestal and wand'; return true"
+		ALT="The Wand of Days">
+	<AREA NAME="RoomE" SHAPE="POLY" COORDS="133,213,133,171,196,171,170,197"
+		HREF="javascript:alert('The Room of Days. Seven stained glass panels show the progress of a day through dawn, sunrise, morning, noon, late afternoon, dusk, and twilight. This room charges the Wand of Days.');"
+		onMouseOver="self.status='The Room of Days'; return true"
+		ALT="The Room of Days">
+	<AREA NAME="RoomF" SHAPE="POLY" COORDS="108,49,130,53,144,61,113,92,108,92"
+		HREF="javascript:alert('Filled with the remains of broken statues. Only one remains intact, lying on its side along one wall. There is something magical around its head, upon which a Trigger spell was detected.');"
+		onMouseOver="self.status='Room filled with broken statues'; return true"
+		ALT="Broken statues">
+	<AREA NAME="RoomI" SHAPE="POLY" COORDS="61,72,80,56,108,49,108,92,91,102"
+		HREF="javascript:alert('An empty room. The room is uninteresting except for a man-shaped gap in the ice on the floor. No explanation for the gap was found.');"
+		onMouseOver="self.status='Empty room with man-shaped gap in the ice'; return true"
+		ALT="Man-shaped ice gap">
+
+
+	<AREA NAME="core" SHAPE="CIRCLE" COORDS="109,109,14"
+		HREF="javascript:alert('The solid core supporting the tower.');"
+		onMouseOver="self.status='Solid core of the tower'; return true"
+		ALT="Central Core">
+
+	<AREA NAME="big" SHAPE="RECT" COORDS="0,0,219,218"
+		HREF="javascript:void(0)"
+		onMouseOver="self.status=' '; return true;"
+		ALT="Tower #4">
+</MAP>
+
+
+<H2>Chapter 8: The City That Waits</H2>
+<H4>&quot;Leave it to this party to try to recreate the Sun.&quot; -- The GM</H4>
+
+<IMG SRC="tower4.gif" ALT="Tower #4" BORDER=0 HEIGHT=217 WIDTH=217
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower4">
+<IMG SRC="../fonts/D.gif" ALT="D" BORDER=0 HEIGHT=72 WIDTH=73
+	ALIGN=LEFT HSPACE=3 VSPACE=1>
+allying only briefly in the extreme cold, the group picked a tower and
+headed for it. The bridge led through an archway, where a catwalk ran from
+the entrance to a circular platform at the center of the hollow structure.
+Three smaller platforms were spaced at even intervals around the central,
+with stairs leading to them. Upon each of these smaller platforms was a tall
+metallic arch.
+<BR>&nbsp; Stepping carefully down the stairs to the first platform (the
+upper right one on the map), Zem stood before the archway. Made of a silvery
+metal and filled with a grey mist, to one side was a circular panel
+which held three palm-shaped depressions. The first was colored blue, the
+second black, and the third red. Three symbols were inscribed above the
+arch, one each in blue, black and red. Zem thought the archways resembled
+teleportation gateways similar to ones used in the Kaydian homeland.
+Placing his hand in the blue depression caused it to glow softly with blue
+light. New symbols appeared on top of the arch in a blue script. They were
+similar to a demonic language Mystical knew, and said &quot;Tower of
+Health&quot;. A hand placed in the black depression caused it to glow softly
+and the blue to fade out. The words atop the archway were replaced with
+different symbols which Mystical read as &quot;Hub&quot; The red control
+caused &quot;Periphery&quot; to appear.
+<BR>&nbsp; The second platform (the bottom one on the map) held a similar
+archway filled with grey haze. The word &quot;Kainrath&quot; was written in
+demonic script above the archway. Mystical remembered that Kainrath was
+another city which had worshipped Orcus, but couldn't recall anything else
+about it. The final platform held an arch filled with yellowish haze. A
+control panel with a single yellow palm print stood to one side. There was
+no symbol carved above the arch, and though the palm print began to glow a
+soft yellow when Rosvenir touched it, no lettering appeared.
+<BR CLEAR=LEFT>&nbsp;
+
+<BR><U>Mystical</U>
+<BR>&nbsp; Orcus had really screwed these people. He'd removed Moil to a
+demi-plane, which is a small bubble universe hidden inside some other plane
+of existence. The funny thing about demi-planes is that its impossible to
+keep the borders sealed. Some amount of mixing takes place, and if you can
+find the boundary you can push through to whatever is on the other side.
+<BR>&nbsp; I decided to test a theory. I cast a <I>Fireball</I> downwards
+towards the mist at the bottom of the tower. I got a good look at the walls
+as it went down: they are smooth, with no platforms below this one. The ball
+travelled about four hundred feet before it entered the mists, and a second
+later it just winked out. It didn't detonate, so it didn't hit anything. It
+must have passed through the border and into whatever plane the Fat Bastard
+moved Moil to. Knowing him, its probably the Elemental Plane of Fire. He'd
+enjoy the irony of a frozen city surrounded by True Flame.
+
+<P><U>The Narrator</U>
+<BR>&nbsp; Not wishing to try their luck at Portal travel, the party left
+the tower. There was some lettering above the archway, and after clearing
+the ice it could be clearly read in the same demonic script: &quot;Tower of
+Portals&quot;.
+<BR>&nbsp; Crossing the causeway to the next tower, someone had the bright
+idea to knock the ice from the lettering above the archway before entering.
+The moment the ice was cleared from the sunset pattern carved in the stone
+everyone had to make an RR versus 100th level Arcane magic. Amazingly,
+Mystical and Rosvenir both made it. Everyone else succumbed and fell into a
+deep, unwakeable slumber. Pulling people away from the edges of the bridge,
+the two attempted everything they could think of to wake the rest. Nothing
+worked. Fortunately Kahlen's <I>Awake</I> spell was cast unconsciously, and
+she sat up of her own accord.
+<BR>&nbsp; Dragging the sleeping party members into the tower, Mystical
+created a <I>Wall of Stone</I> to block the entrance and built a small fire
+to keep them from freezing to death. Kahlen repeatedly cast
+<I>Awakening,</I> allowing additional RRs until Kurik, Zem, and Endira had
+shaken off the effects of the spell. Only Haergronagin remained asleep.
+
+<P><U>Haer's dream sequence</U>
+<TABLE COLUMNS="1">
+<TR><TD><I>bounding through the fields of the Shire, not a care in the
+world, the prarie meadows blooming on a warm spring day. His mother's voice
+calls out: &quot;Haer, you must come back now, we need you to wake up!&quot;
+The young halfling doesn't want to leave, and runs faster.</I></TD></TR>
+
+<TR><TD>&quot;What do ye think you're doing, coming back 'ere with this
+measly take? A blind dwarf with one 'and chopped off could've picked more
+pockets than this!&quot;, said the Master thief, towering over the hobbit
+standing before him. &quot;It was the best I could do, sir,&quot; said the
+apprentice, &quot;the city guard keeps an eye on halflings in the market,
+sir.&quot; The Master growled, &quot;If this be the best you can do ye'll
+never pass the initiation into th' Guild of Thieves. Yer only recourse will
+be to wake up.&quot;</TD></TR>
+
+<TR><TD><I>Don't look down, thats no good. Fifty foot drop would be the end
+of me. One foot in front of the other, thats it. Just like the Guild
+training hall, only now its real. Good. Pathetic lock on the window
+shutters, just as expected. Oil the hinges, check for wires... none. Open
+the shutters. Slip over the sill and into the wizard's bedroom. There he
+lies, sleeping like a baby. Step once... twice... make no noise. Good. Pull
+the packet of sleeping powder out of the belt pouch, make sure he has a
+nice, deep slumber for the next few hours while I rob his house. YIKES! The
+wizard sits straight up in bed. &quot;I think you had better wake up now,
+Haer&quot;, said the Archmage Bigby.</I></TD></TR>
+
+<TR><TD>&quot;It looks about thirty feet down. Jobe, would you do the
+honors?&quot; said the diminutive thief. Jobe focused his eyes on something
+unseen down the hallway, and extended his arms to touch the corridor walls
+on either side. Muscles in his arms tightened and exerted force on the
+stone. More muscles in Jobe's chest and abdomen flexed, wedging him firmly in
+place. Still more muscles in his back extended to their fullest, causing the
+ancient mortar of the walls to creak in protest. Muscles that Haer didn't
+even know existed flexed and bulged in Jobe's neck, rooting him to the spot.
+Jobe was now, quite simply, immovable. Tying a rope about the warrior
+monk's waist, Haer stood at the edge of the pit and prepared to descend.
+&quot;Wait,&quot; said his companion, &quot;don't you think you should wake
+up first?&quot;</TD></TR>
+</TABLE>
+
+<BR CLEAR=RIGHT><U>Day 25</U>
+<IMG SRC="tower2.gif" ALT="Tower #2" BORDER=0 HEIGHT=217 WIDTH=218
+	ALIGN=RIGHT HSPACE=3 VSPACE=1 USEMAP="#tower2">
+<BR>&nbsp; Kahlen had cast <I>Awakening</I> a total of seventy times, thirty
+five on Haer before finally awakening him. Her magic was nearly spent, and
+she needed rest to recover. Also it was positively balmy inside the cave
+Mystical had created compared to the cold outside, encouraging sleep. The
+party got some rest.
+<BR>&nbsp; Eight hours later when Kahlen felt recovered Mystical dispelled
+the walls of stone and exploration of the second tower began. Kurik cast
+<I>Detect Enemies</I> and found two, at the locations marked with red
+symbols on the map. Haer checked each door for traps, finding none. The
+floors of the tower were covered in a layer of ice, and frost coated the
+walls. Most of the rooms were completely empty, stripped bare by the
+elements and the strange nature of the demi-plane. Only rooms which held
+something of note will be described in this Chronicle.
+<BR><A NAME="throneheal">&nbsp; The</A> first room entered (marked
+&quot;A&quot; on the map) held a large, throne shaped chair heavily carved
+with symbols and runes. An intricate sunrise was carved into the back, though
+obscured by a thick layer of ice. The throne looked out upon Moil through a
+ten foot opening in the outer wall of the tower, which had once been a glass
+window. Rosvenir identified the signature of numerous spells enchanting the
+throne, all of a restorative and rejuvinative nature (as of healing).
+<BR>&nbsp; Continuing in counterclockwise direction, the party came to a
+long hallway (marked &quot;B&quot; on the map) which was almost completely
+choked with ice. Icy stalactites and stalagmites had formed and in some
+places extended until they merged together into a thick column. Not liking
+the idea of traversing a place where things could drop from above, Mystical
+created a <I>Wall of Fire</I> and a <I>Wall of Ice</I> sculpted into a
+trough to carry the melted water down the hallway and out the window of the
+throne room. The ice melting slowly under the magical assault, the party
+decided to return later.
+<BR>&nbsp; Retracing their steps the group explored a number of empty rooms
+before coming to a large room at the end of the outer hallway (marked
+&quot;C&quot; on the map). Kurik's spell had detected an enemy in this room,
+so Rosvenir cast <I>Merging</I> to get a look inside. It was a library,
+with a number of empty bookshelves running floor to ceiling which unfortunately
+blocked his view.
+
+<A NAME="wight"><P></A>
+<U>Kurik's report to the Church, delivered via Tithing Bag</U>
+<BR>&nbsp; Rosvenir, Zem and I advanced slowly into the room towards the
+spot which Pandeos had revealed. We found the enemy between two bookcases,
+an undead creature frozen under a layer of ice on the floor. As we
+approached the ice began to crack as the abomination broke itself free,
+and the battle was joined.
+<BR>&nbsp; The creature radiated intense cold, and could focus it into a
+magical attack. I summoned the holy magics to <I>Repel</I> the undead, but
+felt a powerful impediment to the spell and it had no effect. I prayed to
+Pandeos to grant me the strength to Turn it. Mystical encased the creature
+in a <I>Wall of Ice,</I> attempting to confine its magical cold attack, but
+the effort was for naught. The abomination turned its power upon me, and I
+felt the air freeze even as I finished the Litany. Pandeos heard my prayer
+and granted the strength to make the <I>Repel Undead</I> effective, but I was
+frozen in a casing of ice.
+<BR>&nbsp; I do not know exactly what happened then as I struggled to free
+myself. At some point Mystical dropped the Wall of Ice, Zem chopped off one
+of the creature's legs, and for reasons I still do not understand Rosvenir
+created an illusion to make himself appear exactly like the zombie
+<I>[Editor's note: Rosvenir rolled a 66, causing him to cast a random spell
+instead of the Starbolt he intended].</I> Endira shattered the ice encasing
+me with a powerful note from her magical lute, but was then hit by its
+attack and herself frozen. Zem rushed to free her while the rest of us
+rained down attacks upon the creature until it died its second, and final,
+death.
+
+<P><A NAME="wandofdays"><U>The Narrator</U></A>
+<BR CLEAR=RIGHT>&nbsp; A second enemy had been detected in the room across
+the hall (marked &quot;D&quot; on the map). Rosvenir cast another
+<I>Merging</I> spell to peek in. The room was quite small, and filled with
+the broken remnants of marble statues. Only one statue remained intact,
+lying on its side against the far wall. It had a cloth band with a metal
+disk around its head, upon which Rosvenir detected a magical <I>Trigger</I>
+of some sort. Deciding there was no reason to open this particular can of
+whoop-ass the party continued exploration along the inner hallway.
+<BR>&nbsp; Traversing several more empty rooms and a hallway led to a pie
+shaped room (marked &quot;E&quot; on the map). Along the curved outer wall
+were seven colorful panels upon which frost did not encroach. The seven
+scenes depicted a path through various terrain, each at a different time of
+day. Though the terrain varied greatly from frame to frame the path seemed
+to connect at each edge to form an unbroken whole. The scenes depicted:
+<OL>
+	<LI>a path through a dark predawn forest
+	<LI>a road through a grassy prarie at sunrise
+	<LI>a steep mountain pass in the morning
+	<LI>a path alongside a roaring river at noon
+	<LI>a road leading through wide city gates in late afternoon
+	<LI>a path through a tended garden at sunset
+	<LI>a bridge over a chasm of darkness in dim twilight
+</OL>
+Breaking through the ice covering the floor revealed an elaborate mosaic,
+with an inscription in the same demonic language used elsewhere in Moil.
+Mystical was able to read it: &quot;Manifest the Power of the Wand of
+Days.&quot; Rosvenir cast <I>Spell Typing</I> to determine that the panels
+held a form of channeling magic, along with a trigger of some sort. He
+believed that each panel had a slightly different magic enchanting it, and
+that they all had the function of recharging something.
+<BR>&nbsp; Returning to the hallway at &quot;B&quot; found it mostly cleared
+of ice. At its end were tall double doors carved in a sunburst pattern. Haer
+picked the lock and the doors swung easily open. The room beyond was tiny,
+and the walls were obscured by an extremely thick layer of ice. The center
+of the room and floor were completely clear, in which space stood a strange
+metal pedestal topped with a curved apparatus holding a thin wooden wand.
+The pedestal was carved with ornate runes, which Rosvenir deciphered using a
+<I>Literacy</I> spell: &quot;The Choice of Days empowers the Wand, but the
+Choice cannot be from here.&quot; Rosvenir detected a strange absence of
+magic on the wand and pedestal, like a void where power should be.
+<A NAME="wand"><BR></A>
+&nbsp; Returning to room &quot;E&quot;, Kurik touched the wand to the
+panel which depicted a path beside a river at noon. Nothing happened. When
+the pedestal was set in the room and the wand placed back in its holder,
+the wand began to glow slightly. When Kurik touched the panel again the
+word &quot;kindle&quot; appeared on the wand and the panel glowed with a
+soft light. When other panels were touched they would begin to glow and the
+previous panel fade, but the word on the wand did not change. Removing the
+wand from its holder, Rosvenir attuned to it. It is an Arcane device
+which will activate when the person holding it speaks the word
+&quot;kindle&quot;, projecting a light as bright as the sun. The wand has
+ten charges.
+<A NAME="ice"><BR></A>
+&nbsp; Only two rooms remained to be explored, the two beyond room
+&quot;D&quot;. Returning to one of the rooms near the tower entrance,
+Mystical cast <I>Intangible Object</I> on the wall to allow passage.
+The room marked &quot;F&quot; on the map was unremarkable save for a
+cleared patch in the ice on the floor in the shape of a humanoid figure.
+No explanation for the cleared patch was found. The room beyond was empty.
+
+
+<P><CENTER>
+Prev: <A HREF="../h7/index.html">Deja Vu</A> |
+<A HREF="../index.html">Entrance</A> |
+Next: <A HREF="../h9/index.html">Here Be Dragons</A>
+
+</CENTER>
+
+<H5>Experience awarded for this session:</H5>
+<UL TYPE=CIRCLE>
+<LI>Haer 6,250
+<LI>Mystical 6,300
+<LI>Endira 6,000
+<LI>Rosvenir 6,150
+<LI>Kurik 6,150
+<LI>Zem 6,000
+</UL>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3899359-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</BODY>
+</HTML>
