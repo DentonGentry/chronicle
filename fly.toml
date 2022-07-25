@@ -1,5 +1,6 @@
-app = "www-geekhold-com"
+# fly.toml file generated for www-geekhold-com on 2022-07-24T15:47:28-07:00
 
+app = "www-geekhold-com"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -16,7 +17,6 @@ processes = []
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
-
   [services.concurrency]
     hard_limit = 25
     soft_limit = 20
